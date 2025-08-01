@@ -49,11 +49,19 @@ for name, url in modules.items():
 merged = {}
 for widget in all_widgets:
     wid = widget.get("id")
-    ver = normalize_version(widget.get("version", "0.0.0"))
     if not wid:
         continue
-    if wid not in merged or ver > normalize_version(merged[wid].get("version", "0.0.0")):
+
+    cur_ver = normalize_version(widget.get("version", "0.0.0"))
+
+    if wid not in merged:
+        # 之前没有这个 id，直接放进去
         merged[wid] = widget
+    else:
+        # 已有相同 id，比较版本号
+        old_ver = normalize_version(merged[wid].get("version", "0.0.0"))
+        if cur_ver > old_ver:
+            merged[wid] = widget
 
 result = {
     "title": "OCD's AllInOne Widgets",
