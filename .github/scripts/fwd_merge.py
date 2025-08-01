@@ -38,8 +38,6 @@ for name, url in modules.items():
         data = json.loads(text)
         widgets = data.get("widgets", [])
 
-        for w in widgets:
-            w["source"] = name
         all_widgets.extend(widgets)
 
         repo_link = url_to_repo(url)
