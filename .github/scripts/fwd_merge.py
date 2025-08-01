@@ -6,6 +6,12 @@ import os
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
+def sanitize_text(value: str) -> str:
+    """替换掉 description 和 id 中的 forward → fw（不区分大小写）"""
+    if isinstance(value, str):
+        return re.sub(r"forward", "fw", value, flags=re.IGNORECASE)
+    return value
+
 def normalize_version(v: str):
     if not v:
         return version.parse("0.0.0")
@@ -52,6 +58,9 @@ for widget in all_widgets:
     if not wid:
         continue
 
+    # widget["id"] = sanitize_text(widget.get("id", ""))
+    # widget["description"] = sanitize_text(widget.get("description", ""))
+
     cur_ver = normalize_version(widget.get("version", "0.0.0"))
 
     if wid not in merged:
@@ -65,7 +74,7 @@ for widget in all_widgets:
 
 result = {
     "title": "OCD's AllInOne Widgets",
-    "description": "合并自 module.json 中定义的多个 ForwardWidgets 源",
+    "description": "合并自 module.json 中定义的多个 FW Widgets 源(70% off code: OCD)",
     "icon": "https://avatars.githubusercontent.com/u/25606004",
     "widgets": list(merged.values())
 }
@@ -77,7 +86,7 @@ with open(output_file, "w", encoding="utf-8") as f:
 print(f"✅ 合并完成，共 {len(result['widgets'])} 个 widget，已生成 {output_file}")
 
 readme_content = "# OCD's AllInOne Widgets\n\n" \
-    "本仓库自动合并多个 ForwardWidgets 源，方便统一使用。\n\n" \
+    "本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(70% off code: OCD)\n\n" \
     f"👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)\n\n" \
     "## 感谢以下原始仓库作者\n" \
     + "\n".join(thanks) + "\n"
