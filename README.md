@@ -1,6 +1,6 @@
 # OCD's AllInOne Widgets
 
-本仓库自动合并多个 ForwardWidgets 源，方便统一使用。
+本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(70% off code: OCD)
 
 👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)
 

@@ -1,6 +1,6 @@
 {
   "title": "OCD's AllInOne Widgets",
-  "description": "合并自 module.json 中定义的多个 ForwardWidgets 源",
+  "description": "合并自 module.json 中定义的多个 FW Widgets 源(70% off code: OCD)",
   "icon": "https://avatars.githubusercontent.com/u/25606004",
   "widgets": [
     {
