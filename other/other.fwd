@@ -1,0 +1,25 @@
+{
+    "title": "OCD's Other Widgets",
+    "description": "其余本地 Widgets",
+    "icon": "https://avatars.githubusercontent.com/u/25606004",
+    "widgets": [
+        {
+            "id": "yuanqi.wallpaper",
+            "title": "🖼️ ✨wallpaper",
+            "description": "✨ Dynamic wallpaper For Topshelf",
+            "requiredVersion": "0.0.1",
+            "version": "1.1.0",
+            "author": "Discount Code：VEUS",
+            "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/wallpaper.js"
+        },
+        {
+            "id": "xtream_api_en",
+            "title": "Xtream API Live",
+            "description": "Fetch live channels via official Xtream-Codes REST API with keyword search",
+            "requiredVersion": "0.0.1",
+            "version": "2.1.2",
+            "author": "Discount Code：VEUS",
+            "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/xtream_api.js"
+        }
+    ]
+}
