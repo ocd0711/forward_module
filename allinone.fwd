@@ -1,8 +1,26 @@
 {
   "title": "OCD's AllInOne Widgets",
-  "description": "合并自 module.json 中定义的多个 FW Widgets 源(70% off code: OCD)",
+  "description": "合并自 module.json 中定义的多个 FW Widgets 源(30% off code: OCD)",
   "icon": "https://avatars.githubusercontent.com/u/25606004",
   "widgets": [
+    {
+      "id": "yuanqi.wallpaper",
+      "title": "🖼️ ✨wallpaper",
+      "description": "✨ Dynamic wallpaper For Topshelf",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/wallpaper.js"
+    },
+    {
+      "id": "xtream_api_en",
+      "title": "Xtream API Live",
+      "description": "Fetch live channels via official Xtream-Codes REST API with keyword search",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.2",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/xtream_api.js"
+    },
     {
       "id": "forward.combined.media.lists",
       "title": "影视榜单",
@@ -218,6 +236,60 @@
       "version": "0.9.4",
       "author": "匿名",
       "url": "https://github.com/baranwang/forward-widget/releases/latest/download/xvideos.js"
+    },
+    {
+      "id": "Bitch",
+      "title": "Bitch Lives",
+      "description": "🎥 Bitch Lives",
+      "requiredVersion": "0.0.1",
+      "version": "0.0.1",
+      "author": "Discount Code：VEUS",
+      "url": "https://gist.github.com/MrRegret/61a5cbf0637b95a0d800994a51860fb2/raw"
+    },
+    {
+      "id": "ddys_tv",
+      "title": "低端影视",
+      "description": "📼 DIDUAN movies",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/Yan-nian/forward/refs/heads/main/widgets/ForwardWidgets-2kuai/Widgets/ddys.js"
+    },
+    {
+      "id": "🔞 jable",
+      "title": "Jable",
+      "description": "Jable porn",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.6",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/jable.js"
+    },
+    {
+      "id": "wuming.VOD",
+      "title": "Keword VOD",
+      "description": "🔍 Qurey Keword for VOD",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/xbzl/Forward/refs/heads/main/Widgets/wuming.js"
+    },
+    {
+      "id": "cloud_cinema",
+      "title": "云端影院",
+      "description": "☁️ YUNDUAN MOvies",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/CloudCinema.js"
+    },
+    {
+      "id": "combinedmedialistslogo",
+      "title": "影视榜单横版logo封面",
+      "description": "🖼️ Combine media Lists",
+      "requiredVersion": "0.0.1",
+      "version": "1.3.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/quantumultxx/ForwardWidgets/refs/heads/main/Widgets/Move_list.js"
     }
   ]
 }
