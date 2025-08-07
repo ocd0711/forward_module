@@ -6,6 +6,13 @@ import os
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
+def is_url_accessible(url: str) -> bool:
+    try:
+        resp = requests.head(url, timeout=10)
+        return resp.status_code == 200
+    except:
+        return False
+
 def sanitize_text(value: str) -> str:
     """替换掉 description 和 id 中的 forward → fw（不区分大小写）"""
     if isinstance(value, str):
@@ -55,11 +62,16 @@ for name, url in modules.items():
 merged = {}
 for widget in all_widgets:
     wid = widget.get("id")
-    if not wid:
+    url = widget.get("url")
+    if not wid or not url:
         continue
 
     # widget["id"] = sanitize_text(widget.get("id", ""))
     # widget["description"] = sanitize_text(widget.get("description", ""))
+
+    if not is_url_accessible(url):
+        print(f"  ⚠️ widget 被移除: {widget.get('id', '')}")
+        continue
 
     cur_ver = normalize_version(widget.get("version", "0.0.0"))
 
@@ -87,6 +99,7 @@ print(f"✅ 合并完成，共 {len(result['widgets'])} 个 widget，已生成 {
 
 readme_content = "# OCD's AllInOne Widgets\n\n" \
     "本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(30% off code: OCD)\n\n" \
+    "自动检测链接是否有效, 最终生成集合不包含无效模块\n\n" \
     f"👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)\n\n" \
     "## 感谢以下原始仓库作者\n" \
     + "\n".join(thanks) + "\n"
