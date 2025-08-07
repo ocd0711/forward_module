@@ -2,6 +2,8 @@
 
 本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(30% off code: OCD)
 
+自动检测链接是否有效, 最终生成集合不包含无效模块
+
 👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)
 
 ## 感谢以下原始仓库作者
