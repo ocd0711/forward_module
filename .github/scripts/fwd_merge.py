@@ -8,10 +8,36 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
 def is_url_accessible(url: str) -> bool:
     try:
-        resp = requests.head(url, timeout=10)
-        return resp.status_code == 200
-    except:
+        resp = requests.head(url, allow_redirects=True, timeout=10)
+        return 200 <= resp.status_code < 400
+    except requests.RequestException:
         return False
+    
+def check_url_final(url: str):
+    """
+    检测 URL 最终是否可访问。
+    自动跟随跳转，并返回最终状态码和最终 URL。
+    
+    返回:
+        (is_accessible, final_url, status_code)
+    """
+    try:
+        # 跟随重定向直到最终页面
+        resp = requests.head(url, allow_redirects=True, timeout=10)
+
+        # 如果服务器不支持 HEAD，则尝试 GET（只获取头部，避免下载全部内容）
+        if resp.status_code == 405:  
+            resp = requests.get(url, allow_redirects=True, stream=True, timeout=10)
+            resp.close()
+
+        final_url = resp.url
+        status_code = resp.status_code
+        is_accessible = 200 <= status_code < 300
+
+        return is_accessible, final_url, status_code
+
+    except requests.RequestException:
+        return False, None, None
 
 def sanitize_text(value: str) -> str:
     """替换掉 description 和 id 中的 forward → fw（不区分大小写）"""
@@ -69,9 +95,16 @@ for widget in all_widgets:
     # widget["id"] = sanitize_text(widget.get("id", ""))
     # widget["description"] = sanitize_text(widget.get("description", ""))
 
-    if not is_url_accessible(url):
-        print(f"  ⚠️ widget 被移除: {widget.get('id', '')}")
+    # if not is_url_accessible(url):
+    #     print(f"  ⚠️ widget 被移除: {widget.get('id', '')}")
+    #     continue
+
+    ok, final, code = check_url_final(url)
+    if not ok:
+        print(f"  ⚠️ widget 被移除: {widget.get('id', '')} (最终 URL: {final}, 状态码: {code})")
         continue
+
+    widget["url"] = final
 
     cur_ver = normalize_version(widget.get("version", "0.0.0"))
 
