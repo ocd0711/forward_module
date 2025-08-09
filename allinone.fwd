@@ -94,6 +94,15 @@
       "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/IMDb.js"
     },
     {
+      "id": "person.movie.tmdb",
+      "title": "TMDB人物影视作品",
+      "description": "获取 TMDB 的榜单数据",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.4",
+      "author": "Evan",
+      "url": "https://raw.githubusercontent.com/EmrysChoo/ForwardWidgets/refs/heads/main/Widgets/person_movie.js"
+    },
+    {
       "id": "imdb",
       "title": "IMDB",
       "description": "IMDB",
@@ -193,6 +202,15 @@
       "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/jable.js"
     },
     {
+      "id": "91porn",
+      "title": "91Porn",
+      "description": "获取 91Porn 视频",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.4",
+      "author": "Baran",
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/4fb4feaf-6163-448a-9a29-c52d16226110?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-09T11%3A34%3A25Z&rscd=attachment%3B+filename%3D91porn.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-09T10%3A34%3A15Z&ske=2025-08-09T11%3A34%3A25Z&sks=b&skv=2018-11-09&sig=sZR91fk8zQYE6ltE2OszHYGXnLnjFyOzmKNNSjjoOC8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDczNjIzOCwibmJmIjoxNzU0NzM1OTM4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.KO_SEzIYm4uhWN3pKadh80Tc_Zo-hqNZBugLU-2S8FY&response-content-disposition=attachment%3B%20filename%3D91porn.js&response-content-type=application%2Foctet-stream"
+    },
+    {
       "id": "Pornhub",
       "title": "Pornhub",
       "description": "在线观看Pornhub",
@@ -218,6 +236,24 @@
       "version": "2.1.0",
       "author": "Ti",
       "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/javrate.js"
+    },
+    {
+      "id": "unknow.baranwang.xvideos",
+      "title": "XVideos",
+      "description": "Xvideos",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.4",
+      "author": "匿名",
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/2189ea06-9c66-41ef-a91c-fe93bc535d11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-09T11%3A15%3A42Z&rscd=attachment%3B+filename%3Dxvideos.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-09T10%3A14%3A57Z&ske=2025-08-09T11%3A15%3A42Z&sks=b&skv=2018-11-09&sig=N7GBvrUhiv0q2uA%2FqCLgTW%2B9itAu37zJ6MlQ9uKU%2FM4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDczNjIzOSwibmJmIjoxNzU0NzM1OTM5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.vOzK96vMU-kdCi2Mv1NsNK_n5R0bf82-J7Jk5E_sXcI&response-content-disposition=attachment%3B%20filename%3Dxvideos.js&response-content-type=application%2Foctet-stream"
+    },
+    {
+      "id": "Bitch",
+      "title": "Bitch Lives",
+      "description": "🎥 Bitch Lives",
+      "requiredVersion": "0.0.1",
+      "version": "0.0.1",
+      "author": "Discount Code：VEUS",
+      "url": "https://gist.githubusercontent.com/MrRegret/61a5cbf0637b95a0d800994a51860fb2/raw"
     },
     {
       "id": "ddys_tv",
