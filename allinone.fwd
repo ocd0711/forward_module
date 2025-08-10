@@ -167,12 +167,21 @@
     },
     {
       "id": "forward.playurl.danmu",
-      "title": "播放链接弹幕",
+      "title": "手动链接弹幕",
       "description": "从指定播放链接和服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
       "version": "1.0.1",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_playurl.js"
+    },
+    {
+      "id": "forward.auto.danmu",
+      "title": "自动链接弹幕",
+      "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.0",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_auto.js"
     },
     {
       "id": "dytt_vod",
@@ -208,7 +217,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.9.4",
       "author": "Baran",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/4fb4feaf-6163-448a-9a29-c52d16226110?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-10T04%3A27%3A10Z&rscd=attachment%3B+filename%3D91porn.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-10T03%3A26%3A17Z&ske=2025-08-10T04%3A27%3A10Z&sks=b&skv=2018-11-09&sig=g9osL9bQJdYlO3Ds%2BSk89iU%2FGGn6E5l4QRbhOBJdLNo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDc5NzI3MCwibmJmIjoxNzU0Nzk2OTcwLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.JH2yMHaKKrmSZ3eqokRfdNSP5otg7bMG41vEZMbkcPQ&response-content-disposition=attachment%3B%20filename%3D91porn.js&response-content-type=application%2Foctet-stream"
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/4fb4feaf-6163-448a-9a29-c52d16226110?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-10T05%3A11%3A02Z&rscd=attachment%3B+filename%3D91porn.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-10T04%3A10%3A22Z&ske=2025-08-10T05%3A11%3A02Z&sks=b&skv=2018-11-09&sig=t43D6bjYREUhycXmNqFyLfJRL1KmBI4xmNXanHfhisY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDgwMDE2MSwibmJmIjoxNzU0Nzk5ODYxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.OZkWiDjPV85DOTnXwwT3KvAhcJ35h3BF_KI1oD3w4xk&response-content-disposition=attachment%3B%20filename%3D91porn.js&response-content-type=application%2Foctet-stream"
     },
     {
       "id": "Pornhub",
@@ -244,7 +253,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.9.4",
       "author": "匿名",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/2189ea06-9c66-41ef-a91c-fe93bc535d11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-10T04%3A18%3A29Z&rscd=attachment%3B+filename%3Dxvideos.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-10T03%3A17%3A35Z&ske=2025-08-10T04%3A18%3A29Z&sks=b&skv=2018-11-09&sig=JxwuoCNRHBml7VjIZ1Gw%2FEqh9fS34bWYhMeCSHp6CnI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDc5NzI3MSwibmJmIjoxNzU0Nzk2OTcxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.WISyy8c6uwrBJVx_7WE0AKv9ZSfMb0p-2uVpPVcV6oo&response-content-disposition=attachment%3B%20filename%3Dxvideos.js&response-content-type=application%2Foctet-stream"
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/2189ea06-9c66-41ef-a91c-fe93bc535d11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-10T05%3A05%3A32Z&rscd=attachment%3B+filename%3Dxvideos.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-10T04%3A04%3A42Z&ske=2025-08-10T05%3A05%3A32Z&sks=b&skv=2018-11-09&sig=4ogQC4yLvldhhkPvAJT5zBsIpYALL9vW8QEchWsAEkI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDgwMDE2MiwibmJmIjoxNzU0Nzk5ODYyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.zGY-EZ7AJZ8WKOYbzgc-Xvt2pnp9OIrTq8oZfOspg34&response-content-disposition=attachment%3B%20filename%3Dxvideos.js&response-content-type=application%2Foctet-stream"
     },
     {
       "id": "Bitch",
@@ -254,15 +263,6 @@
       "version": "0.0.1",
       "author": "Discount Code：VEUS",
       "url": "https://gist.githubusercontent.com/MrRegret/61a5cbf0637b95a0d800994a51860fb2/raw"
-    },
-    {
-      "id": "ddys_tv",
-      "title": "低端影视",
-      "description": "📼 DIDUAN movies",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/Yan-nian/forward/refs/heads/main/widgets/ForwardWidgets-2kuai/Widgets/ddys.js"
     },
     {
       "id": "🔞 jable",
