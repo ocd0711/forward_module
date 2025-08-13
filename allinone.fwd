@@ -53,7 +53,7 @@
       "title": "豆瓣我看&豆瓣个性化推荐",
       "description": "解析豆瓣想看、在看、已看以及根据个人数据生成的个性化推荐【30% off code：CHEAP】",
       "requiredVersion": "0.0.1",
-      "version": "1.0.16",
+      "version": "1.0.17",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/douban.js"
     },
@@ -166,6 +166,15 @@
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/letterboxd.js"
     },
     {
+      "id": "forward.auto.danmu",
+      "title": "自动链接弹幕",
+      "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.5",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_auto.js"
+    },
+    {
       "id": "forward.playurl.danmu",
       "title": "手动链接弹幕",
       "description": "从指定播放链接和服务器获取弹幕【30% off code：CHEAP】",
@@ -173,15 +182,6 @@
       "version": "1.0.2",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_playurl.js"
-    },
-    {
-      "id": "forward.auto.danmu",
-      "title": "自动链接弹幕",
-      "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
-      "requiredVersion": "0.0.2",
-      "version": "1.0.4",
-      "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_auto.js"
     },
     {
       "id": "dytt_vod",
@@ -217,7 +217,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.9.4",
       "author": "Baran",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/4fb4feaf-6163-448a-9a29-c52d16226110?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-12T04%3A27%3A58Z&rscd=attachment%3B+filename%3D91porn.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-12T03%3A27%3A50Z&ske=2025-08-12T04%3A27%3A58Z&sks=b&skv=2018-11-09&sig=jFC57w%2BZwwPtuFAvnHFSJ1JqMw0XZHb0FgAP1gMnlxI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDk2OTYyNiwibmJmIjoxNzU0OTY5MzI2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.BglKx7Amh3W7aKx9tU14lqrOHCOrYgTXKPugJL17zes&response-content-disposition=attachment%3B%20filename%3D91porn.js&response-content-type=application%2Foctet-stream"
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/4fb4feaf-6163-448a-9a29-c52d16226110?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-13T04%3A11%3A08Z&rscd=attachment%3B+filename%3D91porn.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-13T03%3A10%3A49Z&ske=2025-08-13T04%3A11%3A08Z&sks=b&skv=2018-11-09&sig=sLSB6jGjNbNDysfeHEM5XKlSq73WsjHLg6T15uYUSO8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTA1NjEzNiwibmJmIjoxNzU1MDU1ODM2LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.Erwxron9YYlYQidgydKAlo4DvQT3vGYl1LLqo4LjSzY&response-content-disposition=attachment%3B%20filename%3D91porn.js&response-content-type=application%2Foctet-stream"
     },
     {
       "id": "Pornhub",
@@ -253,7 +253,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.9.4",
       "author": "匿名",
-      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/2189ea06-9c66-41ef-a91c-fe93bc535d11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-12T04%3A26%3A21Z&rscd=attachment%3B+filename%3Dxvideos.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-12T03%3A25%3A46Z&ske=2025-08-12T04%3A26%3A21Z&sks=b&skv=2018-11-09&sig=q1v9oXNYv4ksY%2BQgSYFoJcudVUFX%2BKQSQ0x3q%2F639tA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NDk2OTYyNywibmJmIjoxNzU0OTY5MzI3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.cqTLuj1iNEm_14p0hFUPHDaRinax0Ay4EVuGRgea_0I&response-content-disposition=attachment%3B%20filename%3Dxvideos.js&response-content-type=application%2Foctet-stream"
+      "url": "https://release-assets.githubusercontent.com/github-production-release-asset/997847335/2189ea06-9c66-41ef-a91c-fe93bc535d11?sp=r&sv=2018-11-09&sr=b&spr=https&se=2025-08-13T04%3A11%3A02Z&rscd=attachment%3B+filename%3Dxvideos.js&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2025-08-13T03%3A10%3A38Z&ske=2025-08-13T04%3A11%3A02Z&sks=b&skv=2018-11-09&sig=oSuQ9x7GACYq9LWGRS0WuleiUjfL2v1mwVV6kNTVuGY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc1NTA1NjEzNywibmJmIjoxNzU1MDU1ODM3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.1gDWlgdnQyizTHO9qZPz6HnzoPceR8_wyvWY7mA-88c&response-content-disposition=attachment%3B%20filename%3Dxvideos.js&response-content-type=application%2Foctet-stream"
     },
     {
       "id": "Bitch",
