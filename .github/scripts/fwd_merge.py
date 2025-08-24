@@ -77,6 +77,7 @@ for name, url in modules.items():
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
+        resp.encoding = "utf-8"
         text = re.sub(r",\s*([\]}])", r"\1", resp.text)
         data = json.loads(text)
         widgets = data.get("widgets", [])
