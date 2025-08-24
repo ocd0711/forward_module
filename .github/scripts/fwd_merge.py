@@ -6,6 +6,10 @@ import os
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
+}
+
 def is_url_accessible(url: str) -> bool:
     try:
         resp = requests.head(url, allow_redirects=True, timeout=10)
@@ -23,11 +27,11 @@ def check_url_final(url: str):
     """
     try:
         # 跟随重定向直到最终页面
-        resp = requests.head(url, allow_redirects=True, timeout=10)
+        resp = requests.head(url, headers=HEADERS, allow_redirects=True, timeout=10)
 
         # 如果服务器不支持 HEAD，则尝试 GET（只获取头部，避免下载全部内容）
         if resp.status_code == 405:  
-            resp = requests.get(url, allow_redirects=True, stream=True, timeout=10)
+            resp = requests.get(url, headers=HEADERS, allow_redirects=True, stream=True, timeout=10)
             resp.close()
 
         final_url = resp.url
@@ -71,7 +75,7 @@ thanks = []
 for name, url in modules.items():
     print(f"正在获取: {name} -> {url}")
     try:
-        resp = requests.get(url, timeout=15)
+        resp = requests.get(url, headers=HEADERS, timeout=15)
         resp.raise_for_status()
         text = re.sub(r",\s*([\]}])", r"\1", resp.text)
         data = json.loads(text)
