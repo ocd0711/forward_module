@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
-          git add allinone.fwd README.md
+          git add allinone.fwd README.md widgets/
           git commit -m "🤖 Auto update allinone.fwd and README.md [skip ci]" || echo "No changes to commit"
           git push
         env:
