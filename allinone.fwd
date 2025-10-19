@@ -10,7 +10,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.3.0",
       "author": "🎁 Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wallpaper.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/yuanqi.wallpaper.js"
     },
     {
       "id": "xtream_api_en",
@@ -19,7 +19,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.1.2",
       "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xtream_api.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xtream_api_en.js"
     },
     {
       "id": "forward.combined.media.lists",
@@ -28,7 +28,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.3.9",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/combined.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.js"
     },
     {
       "id": "zhuijurili",
@@ -73,7 +73,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.1.8",
       "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/HotPicks.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hot_picks.js"
     },
     {
       "id": "bangumi_charts_tmdb_v3",
@@ -82,7 +82,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.0.0",
       "author": "Autism",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/Bangumi_v2.0.0.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/bangumi_charts_tmdb_v3.js"
     },
     {
       "id": "imdb_discovery_final_v2",
@@ -91,7 +91,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.0.0",
       "author": "Autism",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/IMDb.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb_discovery_final_v2.js"
     },
     {
       "id": "person.movie.tmdb",
@@ -100,7 +100,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.4",
       "author": "Evan",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/person_movie.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/person.movie.tmdb.js"
     },
     {
       "id": "imdb",
@@ -118,7 +118,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.1.0",
       "author": "Ti",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ti.bemarkt.vod.maccms.js"
     },
     {
       "id": "movie_paradise",
@@ -127,7 +127,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.0",
       "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/MovieParadise.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/movie_paradise.js"
     },
     {
       "id": "live",
@@ -145,7 +145,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.1.6",
       "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/TvLive.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tv_live.js"
     },
     {
       "id": "ti.bemarkt.podcast",
@@ -154,7 +154,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.1.0",
       "author": "Ti",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/podcast.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ti.bemarkt.podcast.js"
     },
     {
       "id": "jable",
@@ -163,7 +163,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.9",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/Jable.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable.js"
     },
     {
       "id": "Pornhub",
@@ -172,7 +172,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.5",
       "author": "海带",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ph.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/Pornhub.js"
     },
     {
       "id": "ti.bemarkt.javday",
@@ -181,7 +181,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.1.0",
       "author": "Ti",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ti.bemarkt.javday.js"
     },
     {
       "id": "ti.bemarkt.javrate",
@@ -190,7 +190,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.1.0",
       "author": "Ti",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javrate.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ti.bemarkt.javrate.js"
     },
     {
       "id": "letterboxd",
@@ -206,9 +206,9 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "2.0.0",
+      "version": "2.0.2",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_auto.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
     },
     {
       "id": "forward.auto.danmu_api",
@@ -217,7 +217,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.1",
       "author": "huangxd",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_api.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu_api.js"
     },
     {
       "id": "dytt_vod",
@@ -226,7 +226,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.0",
       "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dytt.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dytt_vod.js"
     },
     {
       "id": "ddys_vod",
@@ -235,7 +235,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.1",
       "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ddys.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ddys_vod.js"
     },
     {
       "id": "Bitch",
@@ -253,7 +253,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.6",
       "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/🔞 jable.js"
     },
     {
       "id": "wuming.VOD",
@@ -262,7 +262,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.0",
       "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wuming.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wuming.VOD.js"
     },
     {
       "id": "cloud_cinema",
@@ -271,7 +271,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.0",
       "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/CloudCinema.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cloud_cinema.js"
     },
     {
       "id": "baranwang.danmu.universe",
@@ -280,7 +280,7 @@
       "requiredVersion": "0.0.2",
       "version": "0.10.1",
       "author": "Baran",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_universe.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
     },
     {
       "id": "forward.combined.media.lists.en",
@@ -289,7 +289,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.0",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/Move_list_EN.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.en.js"
     },
     {
       "id": "missav",
@@ -298,7 +298,7 @@
       "requiredVersion": "0.0.2",
       "version": "1.0.0",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/MissAV.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav.js"
     },
     {
       "id": "nsfw.91porn",
@@ -307,7 +307,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.10.1",
       "author": "匿名",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nsfw.91porn.js"
     },
     {
       "id": "unknow.baranwang.xvideos",
@@ -316,7 +316,7 @@
       "requiredVersion": "0.0.1",
       "version": "0.9.4",
       "author": "匿名",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xvideos.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
     }
   ]
 }
