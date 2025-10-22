@@ -16,7 +16,7 @@ WidgetMetadata = {
       description: "今日热门电视剧",
       requiresWebView: false,
       functionName: "loadTodayHotTV",
-      cacheDuration: 600,
+      cacheDuration: 3600,
       params: [
         { name: "language", title: "语言", type: "language", value: "zh-CN" },
         { 
@@ -41,7 +41,7 @@ WidgetMetadata = {
       description: "今日热门电影",
       requiresWebView: false,
       functionName: "loadTodayHotMovies",
-      cacheDuration: 600,
+      cacheDuration: 3600,
       params: [
         { name: "language", title: "语言", type: "language", value: "zh-CN" },
         { 
