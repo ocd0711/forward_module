@@ -206,7 +206,7 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "2.0.9",
+      "version": "2.0.10",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
     },
@@ -296,9 +296,9 @@
       "title": "VOD & Live Portal",
       "description": "Loads Movies, Series, & Live TV from an Xtream Codes VOD portal.",
       "requiredVersion": "0.0.1",
-      "version": "1.0.8",
+      "version": "1.1.9",
       "author": "Dex",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod_portal.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/VODLivePortal.js"
     },
     {
       "id": "missav",
