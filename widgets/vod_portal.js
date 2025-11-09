@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         VOD & Live Portal
-// @version      1.0.8
+// @version      1.2.2
 // @description  Fetches Movies, Series, and Live TV from an Xtream Codes portal
 // @author       Dex
 // ==/UserScript==
@@ -21,7 +21,13 @@ WidgetMetadata = {
                     title: "Portal URL",
                     type: "input",
                     description: "Enter the portal URL (e.g., http://example.com:8080)",
-                    placeholders: []
+                    placeholders: [
+                        { title: "Burner (Recommended)", value: "http://burner25699.cdn-24.me" },
+                        { title: "P13 (Recommended)", value: "http://p13.live" },
+                        { title: "Ultra (Recommended)", value: "http://ultra.gotop.me:8080" },
+                        { title: "Lot (Recommended)", value: "http://lot77162.cdngold.me" },
+                        { title: "Enter Custom Portal...", value: "" } 
+                    ]
                 },
                 {
                     name: "username",
@@ -49,9 +55,45 @@ WidgetMetadata = {
                 },
                 {
                     name: "category_filter",
-                    title: "Filter by Category (Optional, Regex)",
+                    title: "Filter by Category (Optional)",
                     type: "input",
-                    description: "e.g., 'Action' or '.*(Action|Comedy).*'",
+                    description: "e.g., 'Action' or 'مسلسلات عربية'",
+                    placeholders: [
+                        { title: "All", value: "" }, 
+                        { title: "Type Custom Category...", value: "" }, 
+                        // --- Updated Categories ---
+                        { title: "مسلسلات عربية فائقة الوضوح", value: "مسلسلات عربية فائقة الوضوح" },
+                        { title: "مسلسلات شاهد فائقة الوضوح", value: "مسلسلات شاهد فائقة الوضوح" },
+                        { title: "مسلسلات انمي مترجمة", value: "مسلسلات انمي مترجمة" },
+                        { title: "⁴ᴷ ³⁸⁴⁰ᴾ ᴰᴼᴸᴮʸ ᴬᵁᴰᴵᴼ مسلسلات عربية", value: "⁴K ³⁸⁴⁰ᴾ ᴰᴼᴸᴮʸ ᴬᵁᴰᴵᴼ مسلسلات عربية" },
+                        { title: "يعرض الآن تركي مترجم", value: "يعرض الآن تركي مترجم" },
+                        { title: "مسلسلات تركية فائقة الوضوح", value: "مسلسلات تركية فائقة الوضوح" },
+                        { title: "مسلسلات تركية مترجمة", value: "مسلسلات تركية مترجمة" },
+                        { title: "مسلسلات الشام العدية", value: "مسلسلات الشام العدية" },
+                        { title: "افلام عادل امام", value: "افلام عادل امام" },
+                        { title: "أفلام نجوم العرب", value: "أفلام نجوم العرب" },
+                        { title: "أفلام احمد حلمي", value: "أفلام احمد حلمي" },
+                        { title: "أفلام احمد عز", value: "أفلام احمد عز" },
+                        { title: "أفلام محمد هنيدي", value: "أفلام محمد هنيدي" },
+                        { title: "أفلام عربية حديثه", value: "أفلام عربية حديثه" },
+                        { title: "⁴ᴷ ³⁸⁴⁰ᴾ  Dᴼᴸᴮʸ ᴬᵁᴰᴵᴼ افلام عربية", value: "⁴ᴷ ³⁸⁴⁰ᴾ ᴰᴼᴸᴮʸ ᴬᵁᴰᴵᴼ افلام عربية" },
+                        { title: "ᴰᴼᴸᴮʸ ᴬᵁᴰᴵᴼ افلام عربية", value: "ᴰᴼᴸᴮʸ ᴬᵁᴰᴵᴼ افلام عربية" },
+                        { title: "أفلام عربية فائقة الوضوح", value: "أفلام عربية فائقة الوضوح" },
+                        { title: "مسرحيات مصرية", value: "مسرحيات مصرية" },
+                        { title: "مسرحيات خليجية", value: "مسرحيات خليجية" },
+                        { title: "أفلام انمي", value: "أفلام انمي" },
+                        { title: "افلام تركية مترجمة", value: "افلام تركية مترجمة" }, 
+                        { title: "أفلام اطفال مدبلجة", value: "أفلام اطفال مدبلجة" },
+                        { title: "أفلام اطفال مترجمة", value: "أفلام اطفال مترجمة" },
+                        { title: "أفلام أطفال فائقة الوضوح", value: "أفلام أطفال فائقة الوضوح" },
+                        { title: "افلام دريد لحام", value: "افلام دريد لحam" }
+                    ]
+                },
+                {
+                    name: "name_filter",
+                    title: "Filter by Title (Optional)",
+                    type: "input",
+                    description: "e.g., 'Spider-Man'",
                     placeholders: [
                         {
                             title: "All",
@@ -60,26 +102,39 @@ WidgetMetadata = {
                     ]
                 },
                 {
-                    name: "name_filter",
-                    title: "Filter by Title (Optional, Regex)",
-                    type: "input",
-                    description: "e.g., 'Spider-Man' or '.*(Batman|Superman).*'",
-                    placeholders: [
-                        {
-                            title: "All",
-                            value: "",
-                        },
+                    name: "sort_by",
+                    title: "Sort By",
+                    type: "enumeration",
+                    description: "Choose the sort order for the results",
+                    value: "default",
+                    enumOptions: [
+                        { title: "Default (API Order)", value: "default" },
+                        { title: "Name (A-Z)", value: "az" },
+                        { title: "Name (Z-A)", value: "za" },
+                        { title: "Newest Added (Movies/Series)", value: "newest" }
                     ]
-                },
+                }
             ],
         },
     ],
-    version: "1.0.8",
+    version: "1.2.2", // <-- UPDATED VERSION
     requiredVersion: "0.0.1",
     description: "Loads Movies, Series, & Live TV from an Xtream Codes VOD portal.",
     author: "Dex"
 };
 
+/**
+ * Helper: clean channel prefixes from title
+ */
+function cleanTitle(title) {
+  if (!title) return "Unknown Title";
+  return title
+    .replace(/^[A-Z]{2,}-[A-Z]{2,}\s*-\s*/i, '') // FR-DE -
+    .replace(/^\[.*?\]\s*-?\s*/, '')            // [US] -
+    .replace(/^.*?\|\s*/, '')                   // 4K|
+    .replace(/^\w+:\s*/, '')                    // VIP:
+    .trim() || title;
+}
 
 /**
  * Main function to load the list of VOD items (Movies or Series).
@@ -89,9 +144,10 @@ async function loadVodItems(params = {}) {
         const portal = params.portal || "";
         const username = params.username || "";
         const password = params.password || "";
-        const type = params.type || "movies"; // 'movies', 'series', or 'live'
+        const type = params.type || "movies";
         const categoryFilter = params.category_filter || "";
         const nameFilter = params.name_filter || "";
+        const sortBy = params.sort_by || "default"; 
 
         if (!portal || !username || !password) {
             throw new Error("Portal URL, Username, and Password are required.");
@@ -135,33 +191,44 @@ async function loadVodItems(params = {}) {
 
         // Apply filters
         const filteredItems = items.filter(item => {
-            const groupMatch = !categoryFilter || (() => {
-                try {
-                    const regex = new RegExp(categoryFilter, 'i');
-                    return regex.test(item.metadata?.group || '');
-                } catch (e) {
-                    return (item.metadata?.group?.toLowerCase() || '').includes(categoryFilter.toLowerCase());
-                }
-            })();
+            
+            const groupMatch = !categoryFilter || 
+                (item.metadata?.group?.toLowerCase() || '').includes(categoryFilter.toLowerCase());
 
-            const nameMatch = !nameFilter || (() => {
-                try {
-                    const regex = new RegExp(nameFilter, 'i');
-                    return regex.test(item.title || '');
-                } catch (e) {
-                    return (item.title?.toLowerCase() || '').includes(nameFilter.toLowerCase());
-                }
-            })();
-
+            const nameMatch = !nameFilter || 
+                (item.title?.toLowerCase() || '').includes(nameFilter.toLowerCase());
+            
             return groupMatch && nameMatch;
         });
 
-        const totalCount = filteredItems.length;
+        // --- START OF SORTING LOGIC (v1.2.0 - More Robust) ---
+        if (sortBy === 'az') {
+            filteredItems.sort((a, b) => 
+                (a.title || '').localeCompare(b.title || '')
+            );
+        } else if (sortBy === 'za') {
+            filteredItems.sort((a, b) => 
+                (b.title || '').localeCompare(a.title || '')
+            );
+        } else if (sortBy === 'newest') {
+            const getTimestamp = (item) => {
+                let ts = 0;
+                if (type === 'movies') {
+                    ts = item.metadata?.added;
+                } else if (type === 'series') {
+                    ts = item.metadata?.last_modified;
+                }
+                // Ensure it's a number. Handles null, undefined, and string numbers.
+                return parseInt(ts, 10) || 0; 
+            };
+            
+            // Sort descending (newest first)
+            filteredItems.sort((a, b) => getTimestamp(b) - getTimestamp(a));
+        }
+        // --- END OF SORTING LOGIC ---
 
-        return filteredItems.map((item, index) => ({
-            ...item,
-            title: `${item.title} (${index + 1}/${totalCount})`
-        }));
+        return filteredItems;
+
     } catch (error) {
         console.error(`Error loading VOD items: ${error.message}`);
         return [];
@@ -175,7 +242,7 @@ async function fetchApiContent(url) {
     try {
         const response = await Widget.http.get(url, {
             headers: {
-                'User-Agent': 'AptvPlayer/1.4.6', // User-Agent for API calls
+                'User-Agent': 'AptvPlayer/1.4.6',
             }
         });
 
@@ -211,7 +278,7 @@ function parseVodContent(data, type, portal, username, password, categoryMap) {
             widgetItem = {
                 id: `movie_${streamId}`,
                 type: "url",
-                title: item.name,
+                title: cleanTitle(item.name),
                 posterPath: item.stream_icon,
                 backdropPath: item.stream_icon,
                 link: detailLink,
@@ -229,7 +296,7 @@ function parseVodContent(data, type, portal, username, password, categoryMap) {
             widgetItem = {
                 id: `series_${seriesId}`,
                 type: "url",
-                title: item.name,
+                title: cleanTitle(item.name),
                 posterPath: item.cover,
                 backdropPath: item.backdrop_path ? (Array.isArray(item.backdrop_path) ? item.backdrop_path[0] : item.backdrop_path) : item.cover,
                 link: detailLink,
@@ -247,7 +314,7 @@ function parseVodContent(data, type, portal, username, password, categoryMap) {
             widgetItem = {
                 id: `live_${streamId}`,
                 type: "url",
-                title: item.name,
+                title: cleanTitle(item.name),
                 posterPath: item.stream_icon,
                 backdropPath: item.stream_icon,
                 link: detailLink, 
@@ -275,7 +342,7 @@ async function loadDetail(link) {
         const parts = link.split(':');
         if (parts[0] !== 'xtream') throw new Error("Invalid link format");
 
-        const type = parts[1]; // 'movie', 'series', or 'live'
+        const type = parts[1];
         const portal = decodeURIComponent(parts[2]);
         const username = decodeURIComponent(parts[3]);
         const password = decodeURIComponent(parts[4]);
@@ -298,7 +365,7 @@ async function loadDetail(link) {
             return {
                 id: `movie_detail_${id}`,
                 type: "detail",
-                title: info.name || "Movie",
+                title: cleanTitle(info.name) || "Movie",
                 description: info.plot,
                 posterPath: info.movie_image || info.cover_big,
                 backdropPath: info.backdrop_path ? (Array.isArray(info.backdrop_path) ? info.backdrop_path[0] : info.backdrop_path) : info.movie_image,
@@ -308,60 +375,117 @@ async function loadDetail(link) {
             };
 
         } else if (type === 'series') {
-            // **FIXED SERIES LOGIC**
             const apiUrl = `${portal}/player_api.php?username=${username}&password=${password}&action=get_series_info&series_id=${id}`;
             const seriesData = await fetchApiContent(apiUrl);
 
-            if (!seriesData || !seriesData.episodes) {
+            if (!seriesData) {
                 throw new Error("Could not load series info.");
             }
 
-            const info = seriesData.info || {};
+            const info = seriesData.info || seriesData;
             const episodesData = seriesData.episodes || {};
             const episodeItemsList = []; 
-            let firstEpisodeUrl = null; 
+            let firstEpisodeUrl = null;
 
-            for (const seasonNum in episodesData) {
-                const seasonEpisodes = episodesData[seasonNum];
-
-                for (const ep of seasonEpisodes) {
-                    const extension = ep.container_extension || 'mp4';
-                    const epLink = `${portal}/series/${username}/${password}/${ep.id}.${extension}`;
-                    const epTitle = `S${seasonNum.padStart(2, '0')}E${ep.episode_num.toString().padStart(2, '0')} - ${ep.title}`;
-
-                    if (!firstEpisodeUrl) {
-                        firstEpisodeUrl = epLink;
+            // --- FIXED EPISODE PROCESSING (v1.2.1) ---
+            /**
+             * Process a single episode with SAFE episode numbering
+             * Uses a per-season counter
+             */
+            const addEpisode = (ep, seasonNum, safeEpisodeCounter) => { 
+                const extension = ep.container_extension || 'mp4';
+                const epLink = `${portal}/series/${username}/${password}/${ep.id}.${extension}`;
+                
+                const sNum = ep.season || seasonNum || 1;
+                
+                // Get the counter-based episode number (from the loop)
+                const safeEpisodeNum = safeEpisodeCounter; 
+                
+                // Try to get episode number from API
+                let apiEpisodeNum = ep.episode_num;
+                
+                // Validate the API episode number
+                let isApiNumValid = false;
+                if (apiEpisodeNum !== undefined && apiEpisodeNum !== null) {
+                    const numValue = parseInt(apiEpisodeNum, 10);
+                    // Consider valid if: is a number, is positive, and is reasonable (< 2000)
+                    if (!isNaN(numValue) && numValue > 0 && numValue < 2000) {
+                        isApiNumValid = true;
+                        apiEpisodeNum = numValue;
                     }
+                }
+                
+                // Choose which episode number to use
+                const finalEpisodeNum = isApiNumValid ? apiEpisodeNum : safeEpisodeNum;
+                
+                // --- START OF CHANGE (v1.2.2) ---
+                // Always use S/E format per user request, ignoring ep.title
+                const epTitle = `S${String(sNum).padStart(2, '0')}E${String(finalEpisodeNum).padStart(2, '0')}`;
+                // --- END OF CHANGE (v1.2.2) ---
 
-                    episodeItemsList.push({
-                        id: ep.id,
-                        type: "url",
-                        title: epTitle,
-                        posterPath: (ep.info ? ep.info.movie_image : null) || ep.movie_image || info.cover,
-                        backdropPath: (ep.info ? ep.info.movie_image : null) || ep.movie_image || info.cover,
-                        videoUrl: epLink,
-                        playerType: "system",
-                        description: (ep.info ? ep.info.plot : null) || "",
-                        releaseDate: (ep.info ? ep.info.releasedate : null) || ""
-                    });
+                if (!firstEpisodeUrl) {
+                    firstEpisodeUrl = epLink;
+                }
+
+                episodeItemsList.push({
+                    id: ep.id,
+                    type: "url",
+                    title: epTitle,
+                    posterPath: (ep.info ? ep.info.movie_image : null) || ep.movie_image || info.cover,
+                    backdropPath: (ep.info ? ep.info.movie_image : null) || ep.movie_image || info.cover,
+                    videoUrl: epLink,
+                    playerType: "system",
+                    description: (ep.info ? ep.info.plot : null) || "",
+                    releaseDate: (ep.info ? ep.info.releasedate : null) || ""
+                });
+            };
+
+            // Parse episodes (handles both flat array and season-grouped object)
+            if (Array.isArray(episodesData)) {
+                let currentSeason = -1;
+                let perSeasonCounter = 1;
+                for (const ep of episodesData) {
+                    const sNum = ep.season || 1;
+                    if (sNum !== currentSeason) { // Check if season has changed
+                        currentSeason = sNum;
+                        perSeasonCounter = 1; // Reset counter
+                    }
+                    addEpisode(ep, sNum, perSeasonCounter);
+                    perSeasonCounter++;
+                }
+            } else if (typeof episodesData === 'object' && episodesData !== null) {
+                for (const seasonNum in episodesData) {
+                    if (!episodesData.hasOwnProperty(seasonNum)) continue;
+                    
+                    const seasonEpisodes = episodesData[seasonNum];
+                    
+                    if (Array.isArray(seasonEpisodes)) {
+                        let perSeasonCounter = 1; // Counter resets for each new season
+                        for (const ep of seasonEpisodes) {
+                            addEpisode(ep, seasonNum, perSeasonCounter);
+                            perSeasonCounter++;
+                        }
+                    }
                 }
             }
+            // --- END FIXED EPISODE PROCESSING ---
 
             return {
-                id: link, // <-- Use original link
+                id: link,
                 type: "url", 
-                title: info.name,
+                title: cleanTitle(info.name),
                 description: info.plot,
                 posterPath: info.cover,
                 backdropPath: info.backdrop_path ? (Array.isArray(info.backdrop_path) ? info.backdrop_path[0] : info.backdrop_path) : info.cover,
                 videoUrl: firstEpisodeUrl,
-                link: link, // <-- Add original link
-                mediaType: "tv", // <-- Add mediaType
-                episode: episodeItemsList.length, // <-- Add episode count
+                link: link, 
+                mediaType: "tv",
+                episode: episodeItemsList.length,
                 episodeItems: episodeItemsList, 
-                rating: info.rating ? parseFloat(info.rating).toFixed(1) : "", // <-- Add rating
-                playerType: "system" // <-- Add playerType
+                rating: info.rating ? parseFloat(info.rating).toFixed(1) : "",
+                playerType: "system"
             };
+
         } else if (type === 'live') {
             const extension = ".ts";
             const videoUrl = `${portal}/live/${username}/${password}/${id}${extension}`;
