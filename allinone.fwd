@@ -283,15 +283,6 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
     },
     {
-      "id": "forward.combined.media.lists.ar",
-      "title": "القوائم السينمائية والتلفزيونية",
-      "description": "قوائم الأفلام والمسلسلات والأنمي",
-      "requiredVersion": "0.0.2",
-      "version": "1.5.0",
-      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/TMBD-LIST-AR.js"
-    },
-    {
       "id": "forward.combined.media.lists.en",
       "title": "Cinema and TV Lists",
       "description": "Lists of movies, series, and anime",
@@ -299,33 +290,6 @@
       "version": "1.5.0",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.en.js"
-    },
-    {
-      "id": "unified_live_portal_v3",
-      "title": "Live tv portal",
-      "description": "Loads Live TV from an M3U URL or an Xtream Codes portal with category filtering.",
-      "requiredVersion": "0.0.1",
-      "version": "3.0.0",
-      "author": "Dex",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/LIVE-TV.js"
-    },
-    {
-      "id": "vod_portal",
-      "title": "VOD Portal",
-      "description": "Loads Movies & Series from an Xtream Codes VOD portal.",
-      "requiredVersion": "0.0.1",
-      "version": "1.3.1",
-      "author": "Dex",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/VOD-Portal.js"
-    },
-    {
-      "id": "live_portal",
-      "title": "VOD & Live Portal",
-      "description": "Loads Movies, Series, & Live TV from an Xtream Codes VOD portal.",
-      "requiredVersion": "0.0.1",
-      "version": "1.2.2",
-      "author": "Dex",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/live_portal.js"
     },
     {
       "id": "missav",
@@ -353,6 +317,42 @@
       "version": "0.9.4",
       "author": "匿名",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
+    },
+    {
+      "id": "forward.combined.media.lists.ar",
+      "title": "القوائم السينمائية والتلفزيونية",
+      "description": "قوائم الأفلام والمسلسلات والأنمي",
+      "requiredVersion": "0.0.2",
+      "version": "1.5.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/TMBD-LIST-AR.js"
+    },
+    {
+      "id": "unified_live_portal_v3",
+      "title": "Live tv portal",
+      "description": "Loads Live TV from an M3U URL or an Xtream Codes portal with category filtering.",
+      "requiredVersion": "0.0.1",
+      "version": "3.0.0",
+      "author": "Dex",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/LIVE-TV.js"
+    },
+    {
+      "id": "vod_portal",
+      "title": "VOD Portal",
+      "description": "Loads Movies & Series from an Xtream Codes VOD portal.",
+      "requiredVersion": "0.0.1",
+      "version": "1.3.1",
+      "author": "Dex",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/VOD-Portal.js"
+    },
+    {
+      "id": "live_portal",
+      "title": "VOD & Live Portal",
+      "description": "Loads Movies, Series, & Live TV from an Xtream Codes VOD portal.",
+      "requiredVersion": "0.0.1",
+      "version": "1.2.2",
+      "author": "Dex",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/live_portal.js"
     }
   ]
 }

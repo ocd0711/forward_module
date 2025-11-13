@@ -1,4 +1,3 @@
-//Original Author:阿米诺斯
 WidgetMetadata = {
   id: "forward.combined.media.lists",
   title: "影视榜单",
