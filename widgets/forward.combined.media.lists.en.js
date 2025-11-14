@@ -1,7 +1,7 @@
 WidgetMetadata = {
   id: "forward.combined.media.lists.en",
-  title: "Cinema and TV Lists",
-  description: "Lists of movies, series, and anime",
+  title: "Movie & TV Lists",
+  description: "Movie & TV Lists",
   author: "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
   site: "https://for-ward.vercel.app",
   version: "1.5.0",
