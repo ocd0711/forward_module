@@ -2824,6 +2824,10 @@ function mapTmdbGenreIdToChineseName(genreId) {
 async function fetchImdbItemsForDouban(scItems) {
     const promises = scItems.map(async (scItem) => {
         const titleNormalizationRules = [
+            { pattern: /^\u771f\u7684\u662f\u5f88\u4e0d\u9519\u7684\u4eba/, replacement: '\uc9c4\uc9dc \uad1c\ucc2e\uc740 \uc0ac\ub78c', forceFirstResult: true },
+            { pattern: /^\u6700\u540e\u590d\u6d3b\u6218/, replacement: '\u30d5\u30a1\u30a4\u30ca\u30eb\u30c9\u30e9\u30d5\u30c8', forceFirstResult: true },
+            { pattern: /^\u66b4\u98ce\u5708/, replacement: '\ubd81\uadf9\uc131', forceFirstResult: true },
+            { pattern: /^\u5510\u671d\u8be1\u4e8b\u5f55\u4e4b\u957f\u5b89/, replacement: '\u5510\u671d\u8be1\u4e8b\u5f55', forceFirstResult: true },
             { pattern: /^\u51e1\u4eba\u4fee\u4ed9\u4f20[\uff1a:]\u91cd\u8fd4\u5929\u5357/, replacement: '\u51e1\u4eba\u4fee\u4ed9\u4f20', forceFirstResult: true },
             { pattern: /^\u7f57\u5c0f\u9ed1\u6218\u8bb0/, replacement: '\u7f57\u5c0f\u9ed1\u6218\u8bb0', forceMovieType: true },
             { pattern: /^\u7d2b\u5ddd \u7b2c\u4e8c\u5b63/, replacement: '\u7d2b\u5ddd', forceFirstResult: true },
