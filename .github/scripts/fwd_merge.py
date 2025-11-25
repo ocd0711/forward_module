@@ -93,6 +93,39 @@ def url_to_repo(raw_url: str) -> str:
         return f"https://github.com/{user}/{repo}"
     return raw_url
 
+def normalize_filename(filename):
+    """规范化文件名，处理不区分大小写的文件系统"""
+    name, ext = os.path.splitext(filename)
+    # 将文件名转换为小写，避免大小写冲突
+    return f"{name.lower()}{ext.lower()}"
+
+def file_exists_case_insensitive(directory, filename):
+    """在不区分大小写的文件系统中检查文件是否存在"""
+    normalized_target = normalize_filename(filename)
+    try:
+        for existing_file in os.listdir(directory):
+            if normalize_filename(existing_file) == normalized_target:
+                return True
+        return False
+    except OSError:
+        return False
+
+def get_unique_filename(directory, filename, widget_id):
+    """获取唯一的文件名，避免大小写冲突"""
+    base_name = normalize_filename(filename)
+    name, ext = os.path.splitext(base_name)
+    
+    # 如果文件名已经是基于 widget_id 的，直接返回
+    if name == widget_id.lower():
+        return base_name
+    
+    # 检查是否存在大小写冲突的文件
+    if file_exists_case_insensitive(directory, base_name):
+        # 使用 widget_id 作为文件名保证唯一性
+        return f"{widget_id.lower()}{ext}"
+    
+    return base_name
+
 def download_and_replace_url(widget, base_dir):
     url = widget.get("url")
     if not url:
@@ -110,13 +143,11 @@ def download_and_replace_url(widget, base_dir):
         # 确保 widgets 文件夹存在
         local_dir = os.path.join(base_dir, "widgets")
         os.makedirs(local_dir, exist_ok=True)
-        local_path = os.path.join(local_dir, filename)
 
-        # 如果已存在同名文件（别的 widget 保存过），用 id 保证唯一
-        if os.path.exists(local_path):
-            name, ext = os.path.splitext(filename)
-            filename = f"{widget.get('id')}{ext}"
-            local_path = os.path.join(local_dir, filename)
+        # 获取唯一的文件名，避免大小写冲突
+        widget_id = widget.get('id', '')
+        unique_filename = get_unique_filename(local_dir, filename, widget_id)
+        local_path = os.path.join(local_dir, unique_filename)
 
         # 保存文件
         with open(local_path, "wb") as f:
@@ -124,10 +155,10 @@ def download_and_replace_url(widget, base_dir):
                 f.write(chunk)
 
         # 替换为仓库 RAW 地址
-        repo_url = f"https://raw.githubusercontent.com/{OWNER_REPO}/{BRANCH}/widgets/{filename}"
+        repo_url = f"https://raw.githubusercontent.com/{OWNER_REPO}/{BRANCH}/widgets/{unique_filename}"
         widget["url"] = repo_url
 
-        print(f"  💾 已保存 {widget.get('id')} -> {filename}")
+        print(f"  💾 已保存 {widget.get('id')} -> {unique_filename}")
     except Exception as e:
         print(f"  ⚠️ 下载失败 {widget.get('id')} ({url}): {e}")
 
@@ -209,8 +240,9 @@ if os.path.exists(old_fwd_file):
                     old_url = old_widget.get("url", "")
                     filename = os.path.basename(old_url.split("?")[0])
                     if filename:
-                        local_path = os.path.join(BASE_DIR, "widgets", filename)
-                        if os.path.exists(local_path):
+                        local_dir = os.path.join(BASE_DIR, "widgets")
+                        # 使用大小写不敏感的文件存在检查
+                        if file_exists_case_insensitive(local_dir, filename):
                             merged[wid] = old_widget
                             print(f"  ♻️ 保留本地备份 widget: {wid} -> {filename}")
     except Exception as e:
