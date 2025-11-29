@@ -10,44 +10,34 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.0 Safari/605.1.15"
 }
 
+# ================================================================
+# 工具函数
+# ================================================================
+
 def is_url_accessible(url: str) -> bool:
     try:
         resp = requests.head(url, allow_redirects=True, timeout=10)
         return 200 <= resp.status_code < 400
     except requests.RequestException:
         return False
-    
+
 def check_url_final(url: str):
-    """
-    检测 URL 最终是否可访问。
-    自动跟随跳转，并返回最终状态码和最终 URL。
-    
-    返回:
-        (is_accessible, final_url, status_code)
-    """
+    """检测 URL 最终状态并返回 (可访问?, 最终URL, 状态码)"""
     try:
-        # 跟随重定向直到最终页面
         resp = requests.head(url, headers=HEADERS, allow_redirects=True, timeout=10)
 
-        # 如果服务器不支持 HEAD，则尝试 GET（只获取头部，避免下载全部内容）
-        if resp.status_code == 405:  
+        if resp.status_code == 405:
             resp = requests.get(url, headers=HEADERS, allow_redirects=True, stream=True, timeout=10)
             resp.close()
 
         final_url = resp.url
-        status_code = resp.status_code
-        is_accessible = 200 <= status_code < 300
-
-        return is_accessible, final_url, status_code
+        return (200 <= resp.status_code < 300), final_url, resp.status_code
 
     except requests.RequestException:
         return False, None, None
 
 def sanitize_text(value: str) -> str:
-    """替换掉 description 和 id 中的 forward → fw（不区分大小写）"""
-    if isinstance(value, str):
-        return re.sub(r"forward", "fw", value, flags=re.IGNORECASE)
-    return value
+    return re.sub(r"forward", "fw", value, flags=re.IGNORECASE) if isinstance(value, str) else value
 
 def normalize_version(v: str):
     if not v:
@@ -59,28 +49,23 @@ def normalize_version(v: str):
         return version.parse("0.0.0")
 
 def _detect_branch(base_dir: str) -> str:
-    # 1) 优先用 GitHub Actions 的环境变量
     if os.getenv("GITHUB_REF_NAME"):
         return os.getenv("GITHUB_REF_NAME")
-    if os.getenv("GITHUB_REF"):  # e.g. refs/heads/master
+    if os.getenv("GITHUB_REF"):
         return os.getenv("GITHUB_REF").split("/")[-1]
 
-    # 2) 本地仓库：从 .git/HEAD 读取当前分支
     head_file = os.path.join(base_dir, ".git", "HEAD")
     try:
         with open(head_file, "r", encoding="utf-8") as f:
             line = f.read().strip()
-            # 形如: ref: refs/heads/master
             if line.startswith("ref:"):
                 return line.split("/")[-1]
     except Exception:
         pass
 
-    # 3) 兜底：多数仓库默认还是 master
     return "master"
 
 def _detect_owner_repo() -> str:
-    # GitHub Actions 提供 GITHUB_REPOSITORY=owner/repo
     return os.getenv("GITHUB_REPOSITORY", "ocd0711/forward_module")
 
 OWNER_REPO = _detect_owner_repo()
@@ -89,82 +74,79 @@ BRANCH = _detect_branch(BASE_DIR)
 def url_to_repo(raw_url: str) -> str:
     m = re.match(r"https://raw\.githubusercontent\.com/([^/]+)/([^/]+)/", raw_url)
     if m:
-        user, repo = m.groups()
-        return f"https://github.com/{user}/{repo}"
+        return f"https://github.com/{m.group(1)}/{m.group(2)}"
     return raw_url
 
 def normalize_filename(filename):
-    """规范化文件名，处理不区分大小写的文件系统"""
     name, ext = os.path.splitext(filename)
-    # 将文件名转换为小写，避免大小写冲突
     return f"{name.lower()}{ext.lower()}"
 
 def file_exists_case_insensitive(directory, filename):
-    """在不区分大小写的文件系统中检查文件是否存在"""
-    normalized_target = normalize_filename(filename)
+    target = normalize_filename(filename)
     try:
-        for existing_file in os.listdir(directory):
-            if normalize_filename(existing_file) == normalized_target:
+        for f in os.listdir(directory):
+            if normalize_filename(f) == target:
                 return True
         return False
     except OSError:
         return False
 
 def get_unique_filename(directory, filename, widget_id):
-    """获取唯一的文件名，避免大小写冲突"""
     base_name = normalize_filename(filename)
     name, ext = os.path.splitext(base_name)
-    
-    # 如果文件名已经是基于 widget_id 的，直接返回
+
     if name == widget_id.lower():
         return base_name
-    
-    # 检查是否存在大小写冲突的文件
+
     if file_exists_case_insensitive(directory, base_name):
-        # 使用 widget_id 作为文件名保证唯一性
         return f"{widget_id.lower()}{ext}"
-    
+
     return base_name
 
+# ================================================================
+# 下载 URL → 生成备份地址
+# ================================================================
+
 def download_and_replace_url(widget, base_dir):
-    url = widget.get("url")
-    if not url:
+    original_url = widget.get("url")
+    if not original_url:
         return widget
 
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20, stream=True)
+        resp = requests.get(original_url, headers=HEADERS, timeout=20, stream=True)
         resp.raise_for_status()
 
-        # 获取原始文件名
-        filename = os.path.basename(url.split("?")[0])
+        filename = os.path.basename(original_url.split("?")[0])
         if not filename or filename.lower() == "raw":
             filename = f"{widget.get('id')}.js"
 
-        # 确保 widgets 文件夹存在
         local_dir = os.path.join(base_dir, "widgets")
         os.makedirs(local_dir, exist_ok=True)
 
-        # 获取唯一的文件名，避免大小写冲突
-        widget_id = widget.get('id', '')
-        unique_filename = get_unique_filename(local_dir, filename, widget_id)
+        unique_filename = get_unique_filename(local_dir, filename, widget.get("id"))
         local_path = os.path.join(local_dir, unique_filename)
 
-        # 保存文件
         with open(local_path, "wb") as f:
             for chunk in resp.iter_content(chunk_size=8192):
                 f.write(chunk)
 
-        # 替换为仓库 RAW 地址
         repo_url = f"https://raw.githubusercontent.com/{OWNER_REPO}/{BRANCH}/widgets/{unique_filename}"
-        widget["url"] = repo_url
 
-        print(f"  💾 已保存 {widget.get('id')} -> {unique_filename}")
+        # 保存备份 URL，不覆盖原始 URL
+        widget["backup_url"] = repo_url
+
+        print(f"  💾 备份文件已保存: {widget.get('id')} -> {unique_filename}")
+
     except Exception as e:
-        print(f"  ⚠️ 下载失败 {widget.get('id')} ({url}): {e}")
+        print(f"  ⚠️ 下载失败 {widget.get('id')} ({original_url}): {e}")
 
     return widget
 
-# 读取 module.json
+
+# ================================================================
+# 主逻辑：读取 module.json → 合并 → 保留最新版本
+# ================================================================
+
 with open(os.path.join(BASE_DIR, "module.json"), "r", encoding="utf-8") as f:
     modules = json.load(f)
 
@@ -182,14 +164,16 @@ for name, url in modules.items():
         widgets = data.get("widgets", [])
 
         all_widgets.extend(widgets)
+        thanks.append(f"- [{name}]({url_to_repo(url)})")
 
-        repo_link = url_to_repo(url)
-        thanks.append(f"- [{name}]({repo_link})")
         print(f"  ✅ 已加载 {len(widgets)} 个 widgets")
     except Exception as e:
         print(f"  ⚠️ 无法读取 {name}: {e}")
 
-# 只保留每个 widget 的最新版本
+# ================================================================
+# 去重 → 保留最新版本 → 过滤不可访问 URL
+# ================================================================
+
 merged = {}
 for widget in all_widgets:
     wid = widget.get("id")
@@ -197,80 +181,109 @@ for widget in all_widgets:
     if not wid or not url:
         continue
 
-    # widget["id"] = sanitize_text(widget.get("id", ""))
-    # widget["description"] = sanitize_text(widget.get("description", ""))
-
-    # if not is_url_accessible(url):
-    #     print(f"  ⚠️ widget 被移除: {widget.get('id', '')}")
-    #     continue
-
     ok, final, code = check_url_final(url)
     if not ok:
-        print(f"  ⚠️ widget 被移除: {widget.get('id', '')} (最终 URL: {final}, 状态码: {code})")
+        print(f"  ⚠️ 已跳过失效 widget: {wid} (最终 URL: {final}, 状态码: {code})")
         continue
 
     widget["url"] = final
 
     cur_ver = normalize_version(widget.get("version", "0.0.0"))
-
-    if wid not in merged:
-        # 之前没有这个 id，直接放进去
+    if wid not in merged or cur_ver > normalize_version(merged[wid].get("version", "0.0.0")):
         merged[wid] = widget
-    else:
-        # 已有相同 id，比较版本号
-        old_ver = normalize_version(merged[wid].get("version", "0.0.0"))
-        if cur_ver > old_ver:
-            merged[wid] = widget
 
-# 下载并替换 URL
+
+# ================================================================
+# 下载并生成 backup_url
+# ================================================================
+
 for wid, widget in merged.items():
     merged[wid] = download_and_replace_url(widget, BASE_DIR)
 
-# === 保留旧的 allinone.fwd 中丢失但本地有备份的 widgets ===
-old_fwd_file = os.path.join(BASE_DIR, "allinone.fwd")
-if os.path.exists(old_fwd_file):
+
+# ================================================================
+# 从旧的 allinone.fwd 恢复缺失但本地存在备份的内容
+# ================================================================
+
+old_fwd_path = os.path.join(BASE_DIR, "allinone.fwd")
+
+if os.path.exists(old_fwd_path):
     try:
-        with open(old_fwd_file, "r", encoding="utf-8") as f:
+        with open(old_fwd_path, "r", encoding="utf-8") as f:
             old_data = json.load(f)
-            for old_widget in old_data.get("widgets", []):
-                wid = old_widget.get("id")
-                if not wid:
-                    continue
-                if wid not in merged:
-                    old_url = old_widget.get("url", "")
-                    filename = os.path.basename(old_url.split("?")[0])
-                    if filename:
-                        local_dir = os.path.join(BASE_DIR, "widgets")
-                        # 使用大小写不敏感的文件存在检查
-                        if file_exists_case_insensitive(local_dir, filename):
-                            merged[wid] = old_widget
-                            print(f"  ♻️ 保留本地备份 widget: {wid} -> {filename}")
+
+        for old_widget in old_data.get("widgets", []):
+            wid = old_widget.get("id")
+            if wid not in merged:
+                filename = os.path.basename(old_widget.get("url", "")).split("?")[0]
+                if filename and file_exists_case_insensitive(os.path.join(BASE_DIR, "widgets"), filename):
+                    merged[wid] = old_widget
+                    print(f"  ♻️ 恢复本地备份 widget: {wid}")
     except Exception as e:
-        print(f"⚠️ 读取旧的 allinone.fwd 失败: {e}")
-        
-result = {
+        print(f"⚠️ 无法读取旧 allinone.fwd: {e}")
+
+
+# ================================================================
+# 生成 **第一份 fwd**：allinone.fwd（原始 URL）
+# ================================================================
+
+result_main = {
     "title": "OCD's AllInOne Widgets",
-    "description": "合并自 module.json 中定义的多个 FW Widgets 源(30% off code: OCD)",
+    "description": "合并后的模块（使用原始 URL）",
     "icon": "https://avatars.githubusercontent.com/u/25606004",
     "widgets": list(merged.values())
 }
 
-output_file = os.path.join(BASE_DIR, "allinone.fwd")
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump(result, f, ensure_ascii=False, indent=2)
+main_file = os.path.join(BASE_DIR, "allinone.fwd")
 
-print(f"✅ 合并完成，共 {len(result['widgets'])} 个 widget，已生成 {output_file}")
+with open(main_file, "w", encoding="utf-8") as f:
+    json.dump(result_main, f, ensure_ascii=False, indent=2)
 
-readme_content = "# OCD's AllInOne Widgets\n\n" \
-    "本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(30% off code: OCD)\n\n" \
-    "生成本仓库的模块备份防止后期失效\n\n" \
-    "自动检测链接是否有效, 最终生成集合不包含无效模块\n\n" \
-    f"👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)\n\n" \
-    "## 感谢以下原始仓库作者\n" \
-    + "\n".join(thanks) + "\n"
+print(f"🎉 生成完成：{main_file}")
 
-readme_file = os.path.join(BASE_DIR, "README.md")
-with open(readme_file, "w", encoding="utf-8") as f:
-    f.write(readme_content)
 
-print("✅ README.md 已更新")
+# ================================================================
+# 生成 **第二份 fwd**：allinone_back.fwd（备份 URL）
+# ================================================================
+
+backup_widgets = []
+for w in merged.values():
+    w2 = w.copy()
+
+    if "backup_url" in w2:
+        w2["url"] = w2["backup_url"]
+
+    w2.pop("backup_url", None)
+    backup_widgets.append(w2)
+
+result_backup = {
+    "title": "OCD's AllInOne Widgets (Backup)",
+    "description": "所有 widgets 使用备份 RAW URL",
+    "icon": "https://avatars.githubusercontent.com/u/25606004",
+    "widgets": backup_widgets
+}
+
+backup_file = os.path.join(BASE_DIR, "allinone_back.fwd")
+
+with open(backup_file, "w", encoding="utf-8") as f:
+    json.dump(result_backup, f, ensure_ascii=False, indent=2)
+
+print(f"🎉 生成完成：{backup_file}")
+
+
+# ================================================================
+# 更新 README.md
+# ================================================================
+
+readme = (
+    "# OCD's AllInOne Widgets\n\n"
+    "自动合并多个 Forward Widgets 源并生成两份可用模块：\n\n"
+    "- **allinone.fwd**（使用原始 URL）\n"
+    "- **allinone_back.fwd**（使用仓库 RAW 备份 URL）\n\n"
+    "## 原始来源仓库\n" + "\n".join(thanks)
+)
+
+with open(os.path.join(BASE_DIR, "README.md"), "w", encoding="utf-8") as f:
+    f.write(readme)
+
+print("📘 README.md 已更新")

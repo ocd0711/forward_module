@@ -1,14 +1,11 @@
 # OCD's AllInOne Widgets
 
-本仓库自动合并多个 ForwardWidgets 源，方便统一使用。(30% off code: OCD)
+自动合并多个 Forward Widgets 源并生成两份可用模块：
 
-生成本仓库的模块备份防止后期失效
+- **allinone.fwd**（使用原始 URL）
+- **allinone_back.fwd**（使用仓库 RAW 备份 URL）
 
-自动检测链接是否有效, 最终生成集合不包含无效模块
-
-👉 [点此下载最新 allinone.fwd](https://github.com/ocd0711/forward_module/allinone.fwd)
-
-## 感谢以下原始仓库作者
+## 原始来源仓库
 - [OCD Other Widgets](https://github.com/ocd0711/forward_module)
 - [pack1r's Widgets](https://github.com/pack1r/ForwardWidgets)
 - [pack1r-18](https://github.com/pack1r/ForwardWidgets)
