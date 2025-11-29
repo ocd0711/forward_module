@@ -1,0 +1,357 @@
+{
+  "title": "OCD's AllInOne Widgets",
+  "description": "合并后的模块（使用原始 URL）",
+  "icon": "https://avatars.githubusercontent.com/u/25606004",
+  "widgets": [
+    {
+      "id": "yuanqi.wallpaper",
+      "title": "🖼️ ✨wallpaper",
+      "description": "✨ Dynamic wallpaper For Topshelf",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/wallpaper.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wallpaper.js"
+    },
+    {
+      "id": "xtream_api_en",
+      "title": "Xtream API Live",
+      "description": "Fetch live channels via official Xtream-Codes REST API with keyword search",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.2",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/refs/heads/master/other/xtream_api.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xtream_api.js"
+    },
+    {
+      "id": "forward.combined.media.lists",
+      "title": "影视榜单",
+      "description": "影视动画榜单",
+      "requiredVersion": "0.0.2",
+      "version": "1.5.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://for-ward.vercel.app/Widgets/combined.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/combined.js"
+    },
+    {
+      "id": "zhuijurili",
+      "title": "追剧日历(今/明日播出、各项榜单、今日推荐)",
+      "description": "解析追剧日历今/明日播出剧集/番剧/国漫/综艺、各项榜单、今日推荐等",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.4",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/zhuijurili.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/zhuijurili.js"
+    },
+    {
+      "id": "trakt",
+      "title": "Trakt我看&Trakt个性化推荐",
+      "description": "解析Trakt想看、在看、已看、片单、追剧日历以及根据个人数据生成的个性化推荐【30% off code：CHEAP】",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.15",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/trakt.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt.js"
+    },
+    {
+      "id": "douban",
+      "title": "豆瓣我看&豆瓣个性化推荐",
+      "description": "解析豆瓣想看、在看、已看以及根据个人数据生成的个性化推荐【30% off code：CHEAP】",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.20",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/douban.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/douban.js"
+    },
+    {
+      "id": "yatu",
+      "title": "雅图(每日放送+点播排行榜+评分排行榜)",
+      "description": "解析雅图每日放送更新以及各类排行榜",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.6",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/yatu.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/yatu.js"
+    },
+    {
+      "id": "hot_picks",
+      "title": "热门精选",
+      "description": "获取最新热播剧和热门影片推荐",
+      "requiredVersion": "0.0.1",
+      "version": "1.2.1",
+      "author": "两块",
+      "url": "https://for-ward.vercel.app/Widgets/HotPicks.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hotpicks.js"
+    },
+    {
+      "id": "bangumi_charts_tmdb_v3",
+      "title": "Bangumi 热门榜单",
+      "description": "获取Bangumi近期热门、每日放送数据，支持榜单筛选。",
+      "requiredVersion": "0.0.1",
+      "version": "2.0.0",
+      "author": "Autism",
+      "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/Bangumi_v2.0.0.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/bangumi_v2.0.0.js"
+    },
+    {
+      "id": "imdb_discovery_final_v2",
+      "title": "IMDb 分类资源 v2",
+      "description": "聚合 IMDb 热门影视资源",
+      "requiredVersion": "0.0.1",
+      "version": "2.0.0",
+      "author": "Autism",
+      "url": "https://raw.githubusercontent.com/opix-maker/Forward/refs/heads/main/js/IMDb.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb.js"
+    },
+    {
+      "id": "person.movie.tmdb",
+      "title": "TMDB人物影视作品",
+      "description": "获取 TMDB 的榜单数据",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.4",
+      "author": "Evan",
+      "url": "https://raw.githubusercontent.com/EmrysChoo/ForwardWidgets/refs/heads/main/Widgets/person_movie.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/person_movie.js"
+    },
+    {
+      "id": "imdb",
+      "title": "IMDB",
+      "description": "IMDB",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "pack1r",
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/imdb.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb.js"
+    },
+    {
+      "id": "ti.bemarkt.vod.maccms",
+      "title": "VOD",
+      "description": "获取 VOD 影视数据",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/bemarkt/scripts/refs/heads/master/provider/Forward/widgets/vod.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod.js"
+    },
+    {
+      "id": "movie_paradise",
+      "title": "在线影院",
+      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/MovieParadise.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/movieparadise.js"
+    },
+    {
+      "id": "live",
+      "title": "直播(电视+网络)",
+      "description": "解析直播订阅链接【30% off code：CHEAP】",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.10",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/live.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/live.js"
+    },
+    {
+      "id": "tv_live",
+      "title": "电视台",
+      "description": "获取热门电视直播频道",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.6",
+      "author": "两块",
+      "url": "https://for-ward.vercel.app/Widgets/TvLive.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tvlive.js"
+    },
+    {
+      "id": "ti.bemarkt.podcast",
+      "title": "Podcast",
+      "description": "获取 RSS 播客数据",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/bemarkt/scripts/refs/heads/master/provider/Forward/widgets/podcast.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/podcast.js"
+    },
+    {
+      "id": "jable",
+      "title": "Jable",
+      "description": "获取 Jable 视频",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.9",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://for-ward.vercel.app/Widgets/Jable.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable.js"
+    },
+    {
+      "id": "Pornhub",
+      "title": "Pornhub",
+      "description": "在线观看Pornhub",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.5",
+      "author": "海带",
+      "url": "https://raw.githubusercontent.com/Madai-v/ForwardWidgets/refs/heads/main/Widgets/ph.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ph.js"
+    },
+    {
+      "id": "ti.bemarkt.javday",
+      "title": "JAVDay",
+      "description": "获取 JAVDay 推荐",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/javday.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday.js"
+    },
+    {
+      "id": "ti.bemarkt.javrate",
+      "title": "JAVRate",
+      "description": "获取 JAVRate 推荐",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/javrate.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javrate.js"
+    },
+    {
+      "id": "letterboxd",
+      "title": "Letterboxd电影爱好者平台",
+      "description": "解析Letterboxd片单内的影片【30% off code：CHEAP】",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/letterboxd.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/letterboxd.js"
+    },
+    {
+      "id": "forward.auto.danmu",
+      "title": "自动链接弹幕v2",
+      "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
+      "requiredVersion": "0.0.2",
+      "version": "2.0.10",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_auto.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_auto.js"
+    },
+    {
+      "id": "forward.auto.danmu_api",
+      "title": "danmu_api弹幕",
+      "description": "从danmu_api获取弹幕【五折码：CHEAP.5;七折码：CHEAP】",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "huangxd",
+      "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_api.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_api.js"
+    },
+    {
+      "id": "dytt_vod",
+      "title": "电影天堂",
+      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/dytt.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dytt.js"
+    },
+    {
+      "id": "ddys_vod",
+      "title": "低端影视",
+      "description": "获取在线电影、电视剧、动画",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/ddys.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ddys.js"
+    },
+    {
+      "id": "Bitch",
+      "title": "Bitch Lives",
+      "description": "🎥 Bitch Lives",
+      "requiredVersion": "0.0.1",
+      "version": "0.0.1",
+      "author": "Discount Code：VEUS",
+      "url": "https://gist.githubusercontent.com/MrRegret/61a5cbf0637b95a0d800994a51860fb2/raw",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/bitch.js"
+    },
+    {
+      "id": "🔞 jable",
+      "title": "Jable",
+      "description": "Jable porn",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.6",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/pack1r/ForwardWidgets/refs/heads/main/widgets/jable.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/🔞 jable.js"
+    },
+    {
+      "id": "wuming.VOD",
+      "title": "Keword VOD",
+      "description": "🔍 Qurey Keword for VOD",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/xbzl/Forward/refs/heads/main/Widgets/wuming.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wuming.js"
+    },
+    {
+      "id": "cloud_cinema",
+      "title": "云端影院",
+      "description": "☁️ YUNDUAN MOvies",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/CloudCinema.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cloudcinema.js"
+    },
+    {
+      "id": "baranwang.danmu.universe",
+      "title": "通用弹幕",
+      "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
+      "requiredVersion": "0.0.2",
+      "version": "0.13.1",
+      "author": "Baran",
+      "url": "https://for-ward.vercel.app/Widgets/danmu_universe.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu_universe.js"
+    },
+    {
+      "id": "forward.combined.media.lists.en",
+      "title": "Movie & TV Lists",
+      "description": "Movie & TV Lists",
+      "requiredVersion": "0.0.2",
+      "version": "1.5.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://for-ward.vercel.app/Widgets/Move_list_EN.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/move_list_en.js"
+    },
+    {
+      "id": "missav",
+      "title": "MissAV",
+      "description": "获取 MissAV 推荐",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://for-ward.vercel.app/Widgets/MissAV.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav.js"
+    },
+    {
+      "id": "nsfw.91porn",
+      "title": "91Porn",
+      "description": "🔞 91Porn 视频搜索",
+      "requiredVersion": "0.0.1",
+      "version": "0.10.1",
+      "author": "匿名",
+      "url": "https://for-ward.vercel.app/Widgets/91porn.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn.js"
+    },
+    {
+      "id": "unknow.baranwang.xvideos",
+      "title": "XVideos",
+      "description": "Xvideos",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.4",
+      "author": "匿名",
+      "url": "https://for-ward.vercel.app/Widgets/xvideos.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xvideos.js"
+    }
+  ]
+}
