@@ -244,26 +244,6 @@
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu_api.js"
     },
     {
-      "id": "dytt_vod",
-      "title": "电影天堂",
-      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/dytt.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dytt_vod.js"
-    },
-    {
-      "id": "ddys_vod",
-      "title": "低端影视",
-      "description": "获取在线电影、电视剧、动画",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/ddys.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ddys_vod.js"
-    },
-    {
       "id": "Bitch",
       "title": "Bitch Lives",
       "description": "🎥 Bitch Lives",
@@ -324,6 +304,16 @@
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.en.js"
     },
     {
+      "id": "vod_sream",
+      "title": "VOD Stream",
+      "description": "聚合VOD资源",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "两块",
+      "url": "https://for-ward.vercel.app/Widgets/VodStream.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vodstream.js"
+    },
+    {
       "id": "missav",
       "title": "MissAV",
       "description": "获取 MissAV 推荐",
@@ -352,6 +342,26 @@
       "author": "匿名",
       "url": "https://for-ward.vercel.app/Widgets/xvideos.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
+    },
+    {
+      "id": "dytt_vod",
+      "title": "电影天堂",
+      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/dytt.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dytt_vod.js"
+    },
+    {
+      "id": "ddys_vod",
+      "title": "低端影视",
+      "description": "获取在线电影、电视剧、动画",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/2kuai/ForwardWidgets/refs/heads/main/Widgets/ddys.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ddys_vod.js"
     }
   ]
 }
