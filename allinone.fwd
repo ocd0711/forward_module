@@ -308,10 +308,10 @@
       "title": "VOD Stream",
       "description": "聚合VOD资源",
       "requiredVersion": "0.0.1",
-      "version": "1.0.2",
+      "version": "1.0.208",
       "author": "两块",
       "url": "https://for-ward.vercel.app/Widgets/VodStream.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vodstream.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod_sream.js"
     },
     {
       "id": "missav",
