@@ -260,7 +260,7 @@
       "title": "通用弹幕",
       "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
       "requiredVersion": "0.0.2",
-      "version": "0.14.1",
+      "version": "0.14.2",
       "author": "Baran",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
     },
