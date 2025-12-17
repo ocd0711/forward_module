@@ -292,6 +292,15 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav.js"
     },
     {
+      "id": "hanime1_me_style",
+      "title": "Hanime1",
+      "description": "获取 Hanime1 动画，折扣码gold",
+      "requiredVersion": "0.0.2",
+      "version": "2.1.1",
+      "author": "gr294949",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hanime1.js"
+    },
+    {
       "id": "nsfw.91porn",
       "title": "91Porn",
       "description": "🔞 91Porn 视频搜索",
