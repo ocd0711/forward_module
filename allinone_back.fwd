@@ -121,15 +121,6 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ti.bemarkt.vod.maccms.js"
     },
     {
-      "id": "movie_paradise",
-      "title": "在线影院",
-      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/movie_paradise.js"
-    },
-    {
       "id": "live",
       "title": "直播(电视+网络)",
       "description": "解析直播订阅链接【30% off code：CHEAP】",
@@ -206,7 +197,7 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "1.10.0",
+      "version": "1.10.2",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
     },
@@ -247,15 +238,6 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wuming.vod.js"
     },
     {
-      "id": "cloud_cinema",
-      "title": "云端影院",
-      "description": "☁️ YUNDUAN MOvies",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.0",
-      "author": "Discount Code：VEUS",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cloud_cinema.js"
-    },
-    {
       "id": "baranwang.danmu.universe",
       "title": "通用弹幕",
       "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
@@ -281,6 +263,15 @@
       "version": "1.2.1",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod_sream.js"
+    },
+    {
+      "id": "rr_vod_full",
+      "title": "人人美剧",
+      "description": "获取人人美剧在线资源",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rrmj.js"
     },
     {
       "id": "missav",
@@ -317,6 +308,24 @@
       "version": "0.9.4",
       "author": "匿名",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
+    },
+    {
+      "id": "movie_paradise",
+      "title": "在线影院",
+      "description": "获取在线电影、电视剧、动漫、综艺和短剧",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/movie_paradise.js"
+    },
+    {
+      "id": "cloud_cinema",
+      "title": "云端影院",
+      "description": "☁️ YUNDUAN MOvies",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "Discount Code：VEUS",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cloud_cinema.js"
     },
     {
       "id": "dytt_vod",
