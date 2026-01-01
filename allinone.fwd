@@ -301,7 +301,17 @@
       "version": "1.0.0",
       "author": "两块",
       "url": "https://for-ward.vercel.app/Widgets/rrmj.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rrmj.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rr_vod_full.js"
+    },
+    {
+      "id": "jp_vod_full",
+      "title": "金牌影院",
+      "description": "金牌影院在线资源获取",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "两块",
+      "url": "https://for-ward.vercel.app/Widgets/jpyy.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jpyy.js"
     },
     {
       "id": "missav",
