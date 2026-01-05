@@ -268,7 +268,7 @@
       "title": "通用弹幕",
       "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
       "requiredVersion": "0.0.2",
-      "version": "0.14.2",
+      "version": "0.14.3",
       "author": "Baran",
       "url": "https://for-ward.vercel.app/Widgets/danmu_universe.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
@@ -298,7 +298,7 @@
       "title": "人人美剧",
       "description": "获取人人美剧在线资源",
       "requiredVersion": "0.0.1",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "两块",
       "url": "https://for-ward.vercel.app/Widgets/rrmj.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rr_vod_full.js"
@@ -308,7 +308,7 @@
       "title": "金牌影院",
       "description": "金牌影院在线资源获取",
       "requiredVersion": "0.0.1",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": "两块",
       "url": "https://for-ward.vercel.app/Widgets/jpyy.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jp_vod_full.js"

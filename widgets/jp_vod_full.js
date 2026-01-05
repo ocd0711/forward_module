@@ -2,7 +2,7 @@ WidgetMetadata = {
   id: "jp_vod_full",
   title: "金牌影院",
   icon: "https://assets.vvebo.vip/scripts/icon.png",
-  version: "1.0.2",
+  version: "1.0.3",
   requiredVersion: "0.0.1",
   description: "金牌影院在线资源获取",
   author: "两块",
@@ -29,12 +29,86 @@ WidgetMetadata = {
       title: "加载资源",
       functionName: "loadResource",
       type: "stream",
+      cacheDuration: 600,
       params: []
     }
   ],
 };
 
 const UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.2 Mobile/15E148 Safari/604.1';
+
+async function loadResource(params) {
+    const { seriesName, episode, season, type, site, multiSource } = params;
+
+    if (multiSource !== "enabled" || !seriesName || typeof CryptoJS === 'undefined') {
+        return [];
+    }
+
+    try {
+        const signKey = 'cb808529bae6b6be45ecfab29a4889bc';
+        const t = Date.now().toString();
+
+        const searchData = `keyword=${seriesName}&pageNum=1&pageSize=12&type=false`;
+        const searchSign = CryptoJS.SHA1(CryptoJS.MD5(searchData + `&key=${signKey}&t=${t}`).toString()).toString();
+        const searchUrl = `${site}/api/mw-movie/anonymous/video/searchByWordPageable?${searchData}`;
+        
+        const sRes = await Widget.http.get(searchUrl, { 
+            headers: { 'User-Agent': UA, 't': t, 'sign': searchSign, 'deviceId': getUUID() } 
+        });
+
+        const drama = getPreciseMatch(sRes.data?.data?.list, { seriesName, season, type });
+        if (!drama) return [];
+
+        const detailUrl = `${site}/detail/${drama.vodId}`;
+        const dRes = await Widget.http.get(detailUrl, { headers: { 'User-Agent': UA } });
+        
+        let allEpisodes = [];
+        const matchResult = dRes.data.match(/episodeList.*?\[.*?\}\]\}/);
+        if (matchResult) {
+            const parsedData = JSON.parse('{"' + matchResult[0].replace(/\\\"/g, '"'));
+            allEpisodes = parsedData.episodeList || [];
+        }
+
+        if (!allEpisodes.length) return [];
+
+        let filteredList = type === 'movie' 
+            ? allEpisodes 
+            : [allEpisodes.find(e => e.name === episode.toString()) || allEpisodes[0]];
+
+        const results = await Promise.all(filteredList.map(async (item) => {
+            try {
+                const pt = Date.now().toString();
+                const psStr = `id=${drama.vodId}&nid=${item.nid}`;
+                const ps = CryptoJS.SHA1(CryptoJS.MD5(`${psStr}&key=${signKey}&t=${pt}`).toString()).toString();
+                const pUrl = `${site}/api/mw-movie/anonymous/v2/video/episode/url?${psStr}`;
+                
+                const pRes = await Widget.http.get(pUrl, { 
+                    headers: { 'User-Agent': UA, 't': pt, 'sign': ps, 'deviceId': getUUID() } 
+                });
+
+                const best = pRes.data?.data?.list?.[0];
+                return best ? {
+                    name: best.resolution === 1080 ? "SDR" : "HD",
+                    description: `${item.name} / ${best.resolution}`,
+                    url: best.url
+                } : null;
+            } catch (e) { return null; }
+        }));
+
+        const final = results.filter(Boolean);
+        return final;
+
+    } catch (err) {
+        log(`异常: ${err.message}`);
+        return [];
+    }
+}
+
+function getUUID() {
+return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (e) =>
+('x' === e ? (16 * Math.random()) | 0 : 'r&0x3' | '0x8').toString(16)
+);
+}
 
 function getPreciseMatch(list, params) {
     if (!list?.length) return null;
@@ -66,74 +140,6 @@ function getPreciseMatch(list, params) {
     }
 
     return best.score >= 50 ? best.item : null;
-}
-
-async function loadResource(params) {
-    const { seriesName, episode, season, type, site, multiSource } = params;
-    const log = (msg) => console.log(`[金牌影院] ${msg}`);
-
-    if (multiSource !== "enabled" || !seriesName || typeof CryptoJS === 'undefined') {
-        return [];
-    }
-
-    try {
-        const signKey = 'cb808529bae6b6be45ecfab29a4889bc';
-        const t = Date.now().toString();
-
-        const searchData = `keyword=${seriesName}&pageNum=1&pageSize=12&type=false`;
-        const searchSign = CryptoJS.SHA1(CryptoJS.MD5(searchData + `&key=${signKey}&t=${t}`).toString()).toString();
-        const searchUrl = `${site}/api/mw-movie/anonymous/video/searchByWordPageable?${searchData}`;
-        
-        const sRes = await Widget.http.get(searchUrl, { 
-            headers: { 'User-Agent': UA, 't': t, 'sign': searchSign, 'deviceId': 'FW-DEBUG' } 
-        });
-
-        const drama = getPreciseMatch(sRes.data?.data?.list, { seriesName, season, type });
-        if (!drama) return [];
-
-        const detailUrl = `${site}/detail/${drama.vodId}`;
-        const dRes = await Widget.http.get(detailUrl, { headers: { 'User-Agent': UA } });
-        
-        let allEpisodes = [];
-        const matchResult = dRes.data.match(/episodeList.*?\[.*?\}\]\}/);
-        if (matchResult) {
-            const parsedData = JSON.parse('{"' + matchResult[0].replace(/\\\"/g, '"'));
-            allEpisodes = parsedData.episodeList || [];
-        }
-
-        if (!allEpisodes.length) return [];
-
-        let filteredList = type === 'movie' 
-            ? allEpisodes 
-            : [allEpisodes.find(e => e.name === episode.toString()) || allEpisodes[0]];
-
-        const results = await Promise.all(filteredList.map(async (item) => {
-            try {
-                const pt = Date.now().toString();
-                const psStr = `id=${drama.vodId}&nid=${item.nid}`;
-                const ps = CryptoJS.SHA1(CryptoJS.MD5(`${psStr}&key=${signKey}&t=${pt}`).toString()).toString();
-                const pUrl = `${site}/api/mw-movie/anonymous/v2/video/episode/url?${psStr}`;
-                
-                const pRes = await Widget.http.get(pUrl, { 
-                    headers: { 'User-Agent': UA, 't': pt, 'sign': ps, 'deviceId': 'FW-DEBUG' } 
-                });
-
-                const best = pRes.data?.data?.list?.[0];
-                return best ? {
-                    name: best.resolution === 1080 ? "SDR" : "HD",
-                    description: `${item.name} / ${best.resolution}`,
-                    url: best.url
-                } : null;
-            } catch (e) { return null; }
-        }));
-
-        const final = results.filter(Boolean);
-        return final;
-
-    } catch (err) {
-        log(`异常: ${err.message}`);
-        return [];
-    }
 }
 
 // ============================================================
