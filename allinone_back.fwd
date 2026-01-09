@@ -24,11 +24,11 @@
     {
       "id": "forward.combined.media.lists",
       "title": "影视榜单",
-      "description": "聚合豆瓣、TMDB、IMDB和Bangumi的影视动画榜单",
-      "requiredVersion": "0.0.1",
-      "version": "1.3.1",
-      "author": "阿米诺斯",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.js"
+      "description": "影视动画榜单",
+      "requiredVersion": "0.0.2",
+      "version": "1.5.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/move_list.js"
     },
     {
       "id": "zhuijurili",
@@ -71,7 +71,7 @@
       "title": "热门精选",
       "description": "获取最新热播剧和热门影片推荐",
       "requiredVersion": "0.0.1",
-      "version": "1.1.7",
+      "version": "1.2.1",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hot_picks.js"
     },
@@ -134,7 +134,7 @@
       "title": "电视台",
       "description": "获取热门电视直播频道",
       "requiredVersion": "0.0.1",
-      "version": "1.1.5",
+      "version": "1.1.6",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tv_live.js"
     },
@@ -150,10 +150,10 @@
     {
       "id": "jable",
       "title": "Jable",
-      "description": "获取Jable全站视频",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.6",
-      "author": "nibiru",
+      "description": "获取 Jable 视频",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.9",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable.js"
     },
     {
