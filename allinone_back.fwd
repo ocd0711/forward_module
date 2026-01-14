@@ -301,15 +301,6 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hanime1_me_style.js"
     },
     {
-      "id": "nsfw.91porn",
-      "title": "91Porn",
-      "description": "🔞 91Porn 视频搜索",
-      "requiredVersion": "0.0.1",
-      "version": "0.10.2",
-      "author": "匿名",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nsfw.91porn.js"
-    },
-    {
       "id": "unknow.baranwang.xvideos",
       "title": "XVideos",
       "description": "Xvideos",
@@ -317,6 +308,15 @@
       "version": "0.9.4",
       "author": "匿名",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
+    },
+    {
+      "id": "nsfw.91porn",
+      "title": "91Porn",
+      "description": "🔞 91Porn 视频搜索",
+      "requiredVersion": "0.0.1",
+      "version": "0.10.2",
+      "author": "匿名",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nsfw.91porn.js"
     },
     {
       "id": "movie_paradise",
