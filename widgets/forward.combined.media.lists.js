@@ -4,7 +4,7 @@ WidgetMetadata = {
   description: "影视动画榜单",
   author: "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
   site: "https://for-ward.vercel.app",
-  version: "1.5.0",
+  version: "1.5.1",
   requiredVersion: "0.0.2",
   detailCacheDuration: 60,
   modules: [
@@ -122,10 +122,6 @@ WidgetMetadata = {
                 type: "enumeration",
                 description: "选择一个平台以查看其剧集内容",
                 value: "",
-                belongTo: {
-                  paramName: "air_status",
-                  value: ["released","upcoming",""],
-                },
           enumOptions: [
             { title: "全部", value: "" },
             { title: "Tencent", value: "2007" },
@@ -158,10 +154,6 @@ WidgetMetadata = {
           type: "enumeration",
           description: "选择要筛选的内容类型",
           value: "",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "全部类型", value: "" },
             { title: "犯罪", value: "80" },
@@ -220,10 +212,6 @@ WidgetMetadata = {
           type: "enumeration",
           value: "",
           description: "选择一个公司以查看其剧集内容",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "全部", value: "" },
             { title: "Disney", value: "2" },
@@ -248,10 +236,6 @@ WidgetMetadata = {
           type: "enumeration",
           description: "选择要筛选的内容类型",
           value: "",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "全部类型", value: "" },
             { title: "冒险", value: "12" },

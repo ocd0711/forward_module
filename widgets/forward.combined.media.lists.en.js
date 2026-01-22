@@ -4,7 +4,7 @@ WidgetMetadata = {
   description: "Movie & TV Lists",
   author: "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
   site: "https://for-ward.vercel.app",
-  version: "1.5.0",
+  version: "1.5.1",
   requiredVersion: "0.0.2",
   detailCacheDuration: 60,
   modules: [
@@ -122,10 +122,6 @@ WidgetMetadata = {
                 type: "enumeration",
                 description: "Select a platform to view its TV series content",
                 value: "",
-                belongTo: {
-                  paramName: "air_status",
-                  value: ["released","upcoming",""],
-                },
           enumOptions: [
             { title: "All", value: "" },
             { title: "Tencent", value: "2007" },
@@ -158,10 +154,6 @@ WidgetMetadata = {
           type: "enumeration",
           description: "Select the content type to filter",
           value: "",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "All Types", value: "" },
             { title: "Crime", value: "80" },
@@ -220,10 +212,6 @@ WidgetMetadata = {
           type: "enumeration",
           value: "",
           description: "Select a company to view its content",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "All", value: "" },
             { title: "Disney", value: "2" },
@@ -248,10 +236,6 @@ WidgetMetadata = {
           type: "enumeration",
           description: "Select the content type to filter",
           value: "",
-          belongTo: {
-            paramName: "air_status",
-            value: ["released","upcoming",""],
-          },
           enumOptions: [
             { title: "All Types", value: "" },
             { title: "Adventure", value: "12" },

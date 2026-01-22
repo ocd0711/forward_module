@@ -26,7 +26,7 @@
       "title": "影视榜单",
       "description": "影视动画榜单",
       "requiredVersion": "0.0.2",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.js"
     },
@@ -251,7 +251,7 @@
       "title": "Movie & TV Lists",
       "description": "Movie & TV Lists",
       "requiredVersion": "0.0.2",
-      "version": "1.5.0",
+      "version": "1.5.1",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.en.js"
     },
@@ -278,7 +278,7 @@
       "title": "金牌影院",
       "description": "金牌影院在线资源获取",
       "requiredVersion": "0.0.1",
-      "version": "1.0.4",
+      "version": "1.1.0",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jp_vod_full.js"
     },
