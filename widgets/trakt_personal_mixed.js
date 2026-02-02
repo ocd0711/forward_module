@@ -3,12 +3,13 @@ WidgetMetadata = {
     title: "Trak 追剧日历&个人中心",
     author: "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
     description: "追剧日历:显示你观看剧集最新集的 更新时间&Trakt 待看/收藏/历史。",
-    version: "1.0.7",
+    version: "1.0.8",
     requiredVersion: "0.0.1",
     site: "https://trakt.tv",
 
     globalParams: [
         { name: "traktUser", title: "Trakt 用户名 (必填)", type: "input", value: "" },
+        // 新增：用户需手动填写 Client ID
         { name: "traktClientId", title: "Trakt Client ID (必填)", type: "input", value: "" }
     ],
 
@@ -27,7 +28,7 @@ WidgetMetadata = {
                     enumOptions: [
                         { title: "📅 追剧日历", value: "updates" },
                         { title: "📜 待看列表", value: "watchlist" },
-                        { title: "📦 收藏列表", value: "collection" },
+                        { title: "📦 收藏列表", value: "collection" }, // 实际获取 Favorites
                         { title: "🕒 观看历史", value: "history" }
                     ]
                 },
@@ -39,7 +40,6 @@ WidgetMetadata = {
                     belongTo: { paramName: "section", value: ["watchlist", "collection", "history"] },
                     enumOptions: [ { title: "全部", value: "all" }, { title: "剧集", value: "shows" }, { title: "电影", value: "movies" } ]
                 },
-                // 追剧日历专用排序
                 {
                     name: "updateSort",
                     title: "追剧模式",
@@ -59,10 +59,9 @@ WidgetMetadata = {
 };
 
 // ==========================================
-// 0. 工具函数
+// 0. 全局工具函数
 // ==========================================
 
-// 格式化日期 MM-30
 function formatShortDate(dateStr) {
     if (!dateStr) return "待定";
     const date = new Date(dateStr);
@@ -76,18 +75,23 @@ function formatShortDate(dateStr) {
 // ==========================================
 
 async function loadTraktProfile(params = {}) {
+    // 获取用户输入的 Client ID
     const { traktUser, traktClientId, section, updateSort = "future_first", type = "all", page = 1 } = params;
 
-    if (!traktUser || !traktClientId) return [{ id: "err", type: "text", title: "请填写用户名和Client ID" }];
+    // 校验必填项
+    if (!traktUser || !traktClientId) {
+        return [{ id: "err", type: "text", title: "请填写用户名和 Client ID" }];
+    }
 
-    // === A. 追剧日历 (Updates) - 核心修改区域 ===
+    // === A. 追剧日历 (Updates) ===
     if (section === "updates") {
         return await loadUpdatesLogic(traktUser, traktClientId, updateSort, page);
     }
 
-    // === B. 常规列表 (保持不变) ===
+    // === B. 常规列表 ===
     let rawItems = [];
-    const sortType = "added,desc";
+    const sortType = "added,desc"; 
+    
     if (type === "all") {
         const [movies, shows] = await Promise.all([
             fetchTraktList(section, "movies", sortType, page, traktUser, traktClientId),
@@ -97,6 +101,8 @@ async function loadTraktProfile(params = {}) {
     } else {
         rawItems = await fetchTraktList(section, type, sortType, page, traktUser, traktClientId);
     }
+    
+    // 统一按时间倒序排列
     rawItems.sort((a, b) => new Date(getItemTime(b, section)) - new Date(getItemTime(a, section)));
     
     if (!rawItems || rawItems.length === 0) return page === 1 ? [{ id: "empty", type: "text", title: "列表为空" }] : [];
@@ -114,14 +120,18 @@ async function loadTraktProfile(params = {}) {
 }
 
 // ==========================================
-// 2. 追剧日历逻辑 (已优化显示格式)
+// 2. 追剧日历逻辑
 // ==========================================
 
-async function loadUpdatesLogic(user, id, sort, page) {
+async function loadUpdatesLogic(user, clientId, sort, page) {
     const url = `https://api.trakt.tv/users/${user}/watched/shows?extended=noseasons&limit=100`;
     try {
         const res = await Widget.http.get(url, {
-            headers: { "Content-Type": "application/json", "trakt-api-version": "2", "trakt-api-key": id }
+            headers: { 
+                "Content-Type": "application/json", 
+                "trakt-api-version": "2", 
+                "trakt-api-key": clientId // 使用用户输入的 ID
+            }
         });
         const data = res.data || [];
         if (data.length === 0) return [{ id: "empty", type: "text", title: "无观看记录" }];
@@ -147,12 +157,11 @@ async function loadUpdatesLogic(user, id, sort, page) {
 
         const valid = enrichedShows.filter(Boolean);
         
-        // --- 排序逻辑 ---
         if (sort === "future_first") {
             const futureShows = valid.filter(s => s.isFuture && s.tmdb.next_episode_to_air);
             const pastShows = valid.filter(s => !s.isFuture || !s.tmdb.next_episode_to_air);
-            futureShows.sort((a, b) => new Date(a.sortDate) - new Date(b.sortDate)); // 正序
-            pastShows.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));   // 倒序
+            futureShows.sort((a, b) => new Date(a.sortDate) - new Date(b.sortDate));
+            pastShows.sort((a, b) => new Date(b.sortDate) - new Date(a.sortDate));
             valid.length = 0; 
             valid.push(...futureShows, ...pastShows);
         } else if (sort === "air_date_desc") {
@@ -164,8 +173,6 @@ async function loadUpdatesLogic(user, id, sort, page) {
         const start = (page - 1) * 15;
         return valid.slice(start, start + 15).map(item => {
             const d = item.tmdb;
-            
-            // === 💡 UI 优化核心 ===
             let displayStr = "暂无排期";
             let icon = "📅";
             let epData = null;
@@ -179,26 +186,16 @@ async function loadUpdatesLogic(user, id, sort, page) {
             }
 
             if (epData) {
-                // 格式：🔜 01-30 📺 S01E04
                 const shortDate = formatShortDate(epData.air_date);
                 displayStr = `${icon} ${shortDate} 📺 S${epData.season_number}E${epData.episode_number}`;
             }
 
-            // 特殊：如果是按观看时间排序
-            if (sort === "watched_at") {
-                const watchShort = formatShortDate(item.watchedDate.split('T')[0]);
-                // 如果你希望在观看历史模式也显示更新信息，保持上面的 displayStr
-                // 如果希望显示观看时间，可以取消下面注释：
-                // displayStr = `👁️ ${watchShort} 看过`;
-            }
-            
             return {
                 id: String(d.id), 
                 tmdbId: d.id, 
                 type: "tmdb", 
-                mediaType: "tv",
+                mediaType: "tv", 
                 title: d.name, 
-                // 强制双位置显示，确保万无一失
                 genreTitle: displayStr, 
                 subTitle: displayStr,
                 posterPath: d.poster_path ? `https://image.tmdb.org/t/p/w500${d.poster_path}` : "",
@@ -208,20 +205,42 @@ async function loadUpdatesLogic(user, id, sort, page) {
     } catch (e) { return []; }
 }
 
-async function fetchTraktList(section, type, sort, page, user, id) {
+// ==========================================
+// 3. 通用列表获取逻辑
+// ==========================================
+
+async function fetchTraktList(section, type, sort, page, user, clientId) {
     const limit = 20; 
-    const url = `https://api.trakt.tv/users/${user}/${section}/${type}?extended=full&page=${page}&limit=${limit}`;
+    let url = "";
+
+    // 收藏列表逻辑修正：/users/{user}/favorites/items/{type}
+    if (section === "collection") {
+        url = `https://api.trakt.tv/users/${user}/favorites/${type}?extended=full&page=${page}&limit=${limit}`;
+    } else {
+        url = `https://api.trakt.tv/users/${user}/${section}/${type}?extended=full&page=${page}&limit=${limit}`;
+    }
+
     try {
         const res = await Widget.http.get(url, {
-            headers: { "Content-Type": "application/json", "trakt-api-version": "2", "trakt-api-key": id }
+            headers: { 
+                "Content-Type": "application/json", 
+                "trakt-api-version": "2", 
+                "trakt-api-key": clientId // 使用用户输入的 ID
+            }
         });
         return Array.isArray(res.data) ? res.data : [];
     } catch (e) { return []; }
 }
 
+function getItemTime(item, section) {
+    if (section === "watchlist") return item.listed_at;
+    if (section === "history") return item.watched_at;
+    if (section === "collection") return item.listed_at; // Favorites 列表使用 listed_at
+    return item.created_at || "1970-01-01";
+}
+
 async function fetchTmdbDetail(id, type, subInfo, originalTitle) {
     try {
-        // 修复了你代码里的 'Widge' 拼写错误 -> Widget
         const d = await Widget.tmdb.get(`/${type}/${id}`, { params: { language: "zh-CN" } });
         const year = (d.first_air_date || d.release_date || "").substring(0, 4);
         return {
@@ -235,11 +254,4 @@ async function fetchTmdbDetail(id, type, subInfo, originalTitle) {
 
 async function fetchTmdbShowDetails(id) {
     try { return await Widget.tmdb.get(`/tv/${id}`, { params: { language: "zh-CN" } }); } catch (e) { return null; }
-}
-
-function getItemTime(item, section) {
-    if (section === "watchlist") return item.listed_at;
-    if (section === "history") return item.watched_at;
-    if (section === "collection") return item.collected_at;
-    return item.created_at || "1970-01-01";
 }

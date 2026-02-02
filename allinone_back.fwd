@@ -24,10 +24,10 @@
     {
       "id": "forward.combined.media.lists",
       "title": "影视榜单",
-      "description": "影视动画榜单",
-      "requiredVersion": "0.0.2",
-      "version": "1.5.1",
-      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "description": "聚合豆瓣、TMDB、IMDB和Bangumi的影视动画榜单",
+      "requiredVersion": "0.0.1",
+      "version": "1.3.1",
+      "author": "阿米诺斯",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.media.lists.js"
     },
     {
@@ -71,7 +71,7 @@
       "title": "热门精选",
       "description": "获取最新热播剧和热门影片推荐",
       "requiredVersion": "0.0.1",
-      "version": "1.2.1",
+      "version": "1.1.7",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hot_picks.js"
     },
@@ -134,7 +134,7 @@
       "title": "电视台",
       "description": "获取热门电视直播频道",
       "requiredVersion": "0.0.1",
-      "version": "1.1.6",
+      "version": "1.1.5",
       "author": "两块",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tv_live.js"
     },
@@ -150,10 +150,10 @@
     {
       "id": "jable",
       "title": "Jable",
-      "description": "获取 Jable 视频",
-      "requiredVersion": "0.0.2",
-      "version": "1.0.9",
-      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "description": "获取Jable全站视频",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.6",
+      "author": "nibiru",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable.js"
     },
     {
@@ -197,7 +197,7 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "1.13.4",
+      "version": "1.13.6",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
     },
@@ -238,78 +238,6 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/wuming.vod.js"
     },
     {
-      "id": "baranwang.danmu.universe",
-      "title": "通用弹幕",
-      "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
-      "requiredVersion": "0.0.2",
-      "version": "0.15.1",
-      "author": "Baran",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
-    },
-    {
-      "id": "vod_sream",
-      "title": "VOD Stream",
-      "description": "聚合VOD资源",
-      "requiredVersion": "0.0.1",
-      "version": "1.2.1",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod_sream.js"
-    },
-    {
-      "id": "rr_vod_full",
-      "title": "人人美剧",
-      "description": "获取人人美剧在线资源",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.1",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rr_vod_full.js"
-    },
-    {
-      "id": "jp_vod_full",
-      "title": "金牌影院",
-      "description": "金牌影院在线资源获取",
-      "requiredVersion": "0.0.1",
-      "version": "1.1.0",
-      "author": "两块",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jp_vod_full.js"
-    },
-    {
-      "id": "missav",
-      "title": "MissAV",
-      "description": "获取 MissAV 推荐",
-      "requiredVersion": "0.0.2",
-      "version": "1.0.0",
-      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav.js"
-    },
-    {
-      "id": "hanime1_me_style",
-      "title": "Hanime1",
-      "description": "获取 Hanime1 动画，折扣码gold",
-      "requiredVersion": "0.0.2",
-      "version": "2.1.1",
-      "author": "gr294949",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hanime1_me_style.js"
-    },
-    {
-      "id": "nsfw.91porn",
-      "title": "91porn",
-      "description": "🔞 91Porn 视频搜索",
-      "requiredVersion": "0.0.1",
-      "version": "0.10.2",
-      "author": "匿名",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nsfw.91porn.js"
-    },
-    {
-      "id": "unknow.baranwang.xvideos",
-      "title": "XVideos",
-      "description": "Xvideos",
-      "requiredVersion": "0.0.1",
-      "version": "0.9.4",
-      "author": "匿名",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
-    },
-    {
       "id": "anime_omni_fix",
       "title": "二次元全境聚合",
       "description": "一站式聚合多平台动漫榜单。",
@@ -323,7 +251,7 @@
       "title": "Trak 追剧日历 免key版",
       "description": "内置 Key 版：只需填写用户名即可使用。显示追剧日历、待看、收藏及历史记录",
       "requiredVersion": "0.0.1",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt_personal_key.js"
     },
@@ -332,7 +260,7 @@
       "title": "Trak 追剧日历&个人中心",
       "description": "追剧日历:显示你观看剧集最新集的 更新时间&Trakt 待看/收藏/历史。",
       "requiredVersion": "0.0.1",
-      "version": "1.0.7",
+      "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt_personal_mixed.js"
     },
@@ -416,6 +344,78 @@
       "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.danmu.pro.online_dict.js"
+    },
+    {
+      "id": "baranwang.danmu.universe",
+      "title": "通用弹幕",
+      "description": "通用弹幕插件，支持腾讯、优酷、爱奇艺、哔哩哔哩、人人视频等平台",
+      "requiredVersion": "0.0.2",
+      "version": "0.15.1",
+      "author": "Baran",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/baranwang.danmu.universe.js"
+    },
+    {
+      "id": "vod_sream",
+      "title": "VOD Stream",
+      "description": "聚合VOD资源",
+      "requiredVersion": "0.0.1",
+      "version": "1.2.1",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vod_sream.js"
+    },
+    {
+      "id": "rr_vod_full",
+      "title": "人人美剧",
+      "description": "获取人人美剧在线资源",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.1",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/rr_vod_full.js"
+    },
+    {
+      "id": "jp_vod_full",
+      "title": "金牌影院",
+      "description": "金牌影院在线资源获取",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.0",
+      "author": "两块",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jp_vod_full.js"
+    },
+    {
+      "id": "missav",
+      "title": "MissAV",
+      "description": "获取 MissAV 推荐",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.0",
+      "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav.js"
+    },
+    {
+      "id": "hanime1_me_style",
+      "title": "Hanime1",
+      "description": "获取 Hanime1 动画，折扣码gold",
+      "requiredVersion": "0.0.2",
+      "version": "2.1.1",
+      "author": "gr294949",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hanime1_me_style.js"
+    },
+    {
+      "id": "nsfw.91porn",
+      "title": "91porn",
+      "description": "🔞 91Porn 视频搜索",
+      "requiredVersion": "0.0.1",
+      "version": "0.10.2",
+      "author": "匿名",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nsfw.91porn.js"
+    },
+    {
+      "id": "unknow.baranwang.xvideos",
+      "title": "XVideos",
+      "description": "Xvideos",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.4",
+      "author": "匿名",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/unknow.baranwang.xvideos.js"
     },
     {
       "id": "forward.combined.media.lists.en",
