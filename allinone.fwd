@@ -266,7 +266,7 @@
     {
       "id": "Move_lists",
       "title": "影视榜单",
-      "description": "仅限使用我推荐码购买用户发送凭证开通白名单",
+      "description": "白名单用户独享模块",
       "requiredVersion": "0.0.2",
       "version": "2.0.0",
       "author": "𝓑𝓾𝓽𝓽𝓮𝓻𝓯𝓵𝔂",
@@ -291,7 +291,7 @@
       "version": "1.0.15",
       "author": "匿名",
       "url": "https://for-ward.vercel.app/Widgets/one_fwd.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/one_fwd.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/one.js"
     },
     {
       "id": "vod_sream",
@@ -331,7 +331,7 @@
       "version": "1.0.0",
       "author": "匿名",
       "url": "https://for-ward.vercel.app/Widgets/jav_fwd.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jav_fwd.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javdb.js"
     },
     {
       "id": "missav",
@@ -482,6 +482,26 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/pingtaidujia.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/platform.originals.ui.fix.js"
+    },
+    {
+      "id": "danmu.pro.online",
+      "title": "弹幕多源",
+      "description": "支持添加多条api并自命名&繁简互转",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.3",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/danmuapi-ProMax.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmuapi-promax.js"
+    },
+    {
+      "id": "danmu.pro_dict",
+      "title": "多源弹幕test",
+      "description": "支持添加多条api并自命名&繁简互转",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.2",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/duoyuandanmu.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/duoyuandanmu.js"
     },
     {
       "id": "forward.danmu.pro.online_dict",
