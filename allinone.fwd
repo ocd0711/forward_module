@@ -78,7 +78,7 @@
       "title": "热门精选",
       "description": "获取最新热播剧和热门影片推荐",
       "requiredVersion": "0.0.1",
-      "version": "1.2.1",
+      "version": "1.5.37",
       "author": "两块",
       "url": "https://for-ward.vercel.app/Widgets/HotPicks.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hot_picks.js"
@@ -142,16 +142,6 @@
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/live.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/live.js"
-    },
-    {
-      "id": "tv_live",
-      "title": "电视台",
-      "description": "获取热门电视直播频道",
-      "requiredVersion": "0.0.1",
-      "version": "1.1.6",
-      "author": "两块",
-      "url": "https://for-ward.vercel.app/Widgets/TvLive.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tv_live.js"
     },
     {
       "id": "ti.bemarkt.podcast",
@@ -324,6 +314,16 @@
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jp_vod_full.js"
     },
     {
+      "id": "tv_live",
+      "title": "电视台",
+      "description": "获取热门电视直播频道",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.6",
+      "author": "两块",
+      "url": "https://for-ward.vercel.app/Widgets/TvLive.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/tv_live.js"
+    },
+    {
       "id": "JAVDB",
       "title": "JAVDB",
       "description": "JAVDB在线看",
@@ -348,7 +348,7 @@
       "title": "Hanime1",
       "description": "获取 Hanime1 动画，折扣码gold",
       "requiredVersion": "0.0.2",
-      "version": "2.1.1",
+      "version": "2.2.0",
       "author": "gr294949",
       "url": "https://for-ward.vercel.app/Widgets/hanime1.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/hanime1_me_style.js"
@@ -502,6 +502,16 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/duoyuandanmu.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu.pro_dict.js"
+    },
+    {
+      "id": "imdb_cn_fix_",
+      "title": "IMDb热榜",
+      "description": "IMDb全球榜单，支持日/周纬度切换。",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.3",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/imdb%26cn.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb%26cn.js"
     },
     {
       "id": "forward.danmu.pro.online_dict",
