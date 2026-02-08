@@ -384,6 +384,16 @@
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu.pro_dict.js"
     },
     {
+      "id": "forward.combined.makkapakka",
+      "title": "影视榜单Lite",
+      "description": "豆瓣全能推荐 | TMDB探索 | 猜你想看",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.4",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/YSBD.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ysbd.js"
+    },
+    {
       "id": "imdb_cn_fix_",
       "title": "IMDb热榜",
       "description": "IMDb全球榜单，支持日/周纬度切换。",
@@ -392,6 +402,46 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/imdb%26cn.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb_cn_fix_.js"
+    },
+    {
+      "id": "jable_makka_spec_v4",
+      "title": "Jable_ovo",
+      "description": "简易的jable模块",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.0",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/JABLE.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_makka_spec_v4.js"
+    },
+    {
+      "id": "javday_pro_final_mak",
+      "title": "JAVDay_ovo",
+      "description": "简易的javday模块",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/JAVDAY.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_pro_final_mak.js"
+    },
+    {
+      "id": "91porn_makka",
+      "title": "91Porn_ovo",
+      "description": "91Porn 增加关键词搜索功能",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/91PORN.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_makka.js"
+    },
+    {
+      "id": "missav_makka_play",
+      "title": "MissAV_ovo",
+      "description": "简易的missav模块",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.1",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/MISSAV.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_makka_play.js"
     },
     {
       "id": "Move_lists",
