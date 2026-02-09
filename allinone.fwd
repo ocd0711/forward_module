@@ -208,7 +208,7 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "1.13.6",
+      "version": "1.14.0",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/huangxd-/ForwardWidgets/refs/heads/main/widgets/danmu_auto.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
@@ -402,6 +402,76 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/imdb%26cn.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb_cn_fix_.js"
+    },
+    {
+      "id": "91porn_int",
+      "title": "91Porn",
+      "description": "91Porn",
+      "requiredVersion": "0.0.2",
+      "version": "0.9.6",
+      "author": "網路",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/91Porn.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_int.js"
+    },
+    {
+      "id": "91porny_int",
+      "title": "91Porny",
+      "description": "91Porny",
+      "requiredVersion": "0.0.2",
+      "version": "0.9.6",
+      "author": "網路",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/91Porny.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porny.js"
+    },
+    {
+      "id": "javday_int",
+      "title": "Javday",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "1.2.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/JAVDay.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_int.js"
+    },
+    {
+      "id": "jable_int",
+      "title": "Jable",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.2",
+      "version": "1.1.0",
+      "author": "nibiru",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/Jable.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_int.js"
+    },
+    {
+      "id": "missav_int",
+      "title": "MissAV",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.2",
+      "version": "2.0.0",
+      "author": "蝴蝶",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/MissAV.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_int.js"
+    },
+    {
+      "id": "Pornhub_int",
+      "title": "Pornhub",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.5",
+      "author": "海带",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/Pornhub.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/pornhub_int.js"
+    },
+    {
+      "id": "xvideos_int",
+      "title": "Xvideos",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.6",
+      "author": "海带",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/XVideos.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xvideos_int.js"
     },
     {
       "id": "jable_makka_spec_v4",
