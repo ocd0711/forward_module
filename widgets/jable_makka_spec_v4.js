@@ -1,10 +1,10 @@
 WidgetMetadata = {
   id: "jable_makka_spec_v4",
   title: "Jable_ovo",
-  description: "简易的jable模块。",
+  description: "修复群友jable模块没声音的问题",
   author: "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
   site: "https://jable.tv",
-  version: "1.0.0",
+  version: "1.0.3",
   requiredVersion: "0.0.2",
   detailCacheDuration: 0, // 详情页不缓存
   modules: [
@@ -186,21 +186,18 @@ async function loadDetail(link) {
     const videoCode = title.split(" ")[0]; // 尝试提取番号
 
     // 3. 构造符合规范的 Detail 对象
-    // 规范重点：
-    // - type: 必须是 "detail"
-    // - videoUrl: 必须存在
-    // - customHeaders: 必须包含 Referer
     return {
       id: link,
-      type: "detail", // 修正：此前为 "movie"，导致播放器无法接管
+      type: "detail",
       
       title: title,
       description: `番号: ${videoCode}`,
       
       videoUrl: m3u8Url,
       
-      mediaType: "movie", // 辅助标记，非核心
-      playerType: "system", // 使用系统 AVPlayer
+      mediaType: "movie", 
+      // ✅ 关键修改：使用 ijk 播放器以解决音频解码问题
+      playerType: "ijk", 
       
       // 关键：Jable 必须验证 Referer
       customHeaders: {
@@ -213,14 +210,14 @@ async function loadDetail(link) {
     };
 
   } catch (e) {
-    // 容错处理：如果解析失败，返回一个带错误信息的对象，避免APP崩溃
+    // 容错处理
     console.log("Detail Error: " + e.message);
     return {
        id: link,
        type: "detail",
        title: "解析失败",
        description: e.message,
-       videoUrl: "", // 空地址会提示无资源，但不会闪退
+       videoUrl: "",
        childItems: []
     };
   }

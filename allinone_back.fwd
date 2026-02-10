@@ -188,7 +188,7 @@
       "title": "自动链接弹幕v2",
       "description": "自动获取播放链接并从服务器获取弹幕【30% off code：CHEAP】",
       "requiredVersion": "0.0.2",
-      "version": "1.14.0",
+      "version": "1.14.1",
       "author": "huangxd",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.auto.danmu.js"
     },
@@ -379,7 +379,7 @@
       "requiredVersion": "0.0.2",
       "version": "0.9.6",
       "author": "網路",
-      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porny.js"
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porny_int.js"
     },
     {
       "id": "javday_int",
@@ -429,9 +429,9 @@
     {
       "id": "jable_makka_spec_v4",
       "title": "Jable_ovo",
-      "description": "简易的jable模块",
+      "description": "修复群友jable模块没声音的问题",
       "requiredVersion": "0.0.2",
-      "version": "1.0.0",
+      "version": "1.0.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_makka_spec_v4.js"
     },
