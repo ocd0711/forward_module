@@ -11,3 +11,5 @@
 - [pack1r-18](https://github.com/pack1r/ForwardWidgets)
 - [huangxd's Widgets](https://github.com/huangxd-/ForwardWidgets)
 - [𐌞𐌄𐌖𐌔](https://gist.githubusercontent.com/MrRegret/6b07d8b97eb056a1f1e2e1efb5178268/raw/15b011990ef2ffaf2153daaea0a9cfcf400bf8ff/FWD-combine-config)
+- [𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖's 𝑵𝑺𝑭𝑾-𝙒𝙞𝙙𝙜𝙚𝙩𝙨](https://github.com/MakkaPakka518/FW)
+- [𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖's 𝙒𝙞𝙙𝙜𝙚𝙩𝙨](https://github.com/MakkaPakka518/FW)

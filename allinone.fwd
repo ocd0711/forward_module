@@ -260,8 +260,8 @@
       "requiredVersion": "0.0.1",
       "version": "2.2.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/animeone.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/anime_omni_fix.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/dongmanone.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dongmanone.js"
     },
     {
       "id": "trakt_personal_key",
@@ -270,7 +270,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/traktkey.js",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/traktkey.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt_personal_key.js"
     },
     {
@@ -280,7 +280,7 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/traktlistpro.js",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/trakt.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt_personal_mixed.js"
     },
     {
@@ -290,7 +290,7 @@
       "requiredVersion": "0.0.1",
       "version": "2.0.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/danyi/zongyi.js",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/zongyi.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/variety_hub_ultimate_v4_fix.js"
     },
     {
@@ -300,8 +300,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.2",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/bangdan-one.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/western_trends_hub.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/west.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/west.js"
     },
     {
       "id": "global_tv_calendar_ultimate",
@@ -310,8 +310,8 @@
       "requiredVersion": "0.0.1",
       "version": "2.0.9",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/zhuijurili-one.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/global_tv_calendar_ultimate.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/zjrl.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/zjrl.js"
     },
     {
       "id": "cinephile_hub_ultimate",
@@ -320,8 +320,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/movielist%26interesting.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cinephile_hub_ultimate.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/xilie.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xilie.js"
     },
     {
       "id": "discover_hub_ultimate",
@@ -330,8 +330,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/today-one.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/discover_hub_ultimate.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/today.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/today.js"
     },
     {
       "id": "ultimate_media_hub_pro_ui",
@@ -340,8 +340,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.2.1",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/cn-int-bangdan.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ultimate_media_hub_pro_ui.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/mediahub.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/mediahub.js"
     },
     {
       "id": "makka.platform.originals",
@@ -350,8 +350,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.5",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/zhijiyong-myself/pingtai.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/makka.platform.originals.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/liumeititime.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/liumeititime.js"
     },
     {
       "id": "platform.originals.ui.fix",
@@ -360,8 +360,8 @@
       "requiredVersion": "0.0.1",
       "version": "1.0.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/pingtaidujia.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/platform.originals.ui.fix.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/liumeiti.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/liumeiti.js"
     },
     {
       "id": "danmu.pro.online",
@@ -370,8 +370,138 @@
       "requiredVersion": "0.0.1",
       "version": "1.1.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/danmuapi-ProMax.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu.pro.online.js"
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/danmuapipro.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmuapipro.js"
+    },
+    {
+      "id": "forward.combined.makkapakka",
+      "title": "影视榜单Lite",
+      "description": "豆瓣全能推荐 | TMDB探索 | 猜你想看",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.4",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/ysbd.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.makkapakka.js"
+    },
+    {
+      "id": "imdb_cn_fix_",
+      "title": "IMDb热榜",
+      "description": "IMDb全球榜单，支持日/周纬度切换。",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.3",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/imdb.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb_cn_fix_.js"
+    },
+    {
+      "id": "91porn_int",
+      "title": "91Porn",
+      "description": "91Porn",
+      "requiredVersion": "0.0.2",
+      "version": "0.9.6",
+      "author": "網路",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/nineone.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nineone.js"
+    },
+    {
+      "id": "91porny_int",
+      "title": "91Porny",
+      "description": "91Porny",
+      "requiredVersion": "0.0.2",
+      "version": "0.9.6",
+      "author": "網路",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/nineoney.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nineoney.js"
+    },
+    {
+      "id": "javday_int",
+      "title": "Javday",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "1.2.0",
+      "author": "Ti",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/day.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/day.js"
+    },
+    {
+      "id": "jable_int",
+      "title": "Jable",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.2",
+      "version": "1.1.0",
+      "author": "nibiru",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/able.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/able.js"
+    },
+    {
+      "id": "missav_int",
+      "title": "MissAV",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.2",
+      "version": "2.0.0",
+      "author": "蝴蝶",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/miss.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/miss.js"
+    },
+    {
+      "id": "Pornhub_int",
+      "title": "Pornhub",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "1.1.5",
+      "author": "海带",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/phb.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/phb.js"
+    },
+    {
+      "id": "xvideos_int",
+      "title": "Xvideos",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.1",
+      "version": "0.9.6",
+      "author": "海带",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/xv.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xv.js"
+    },
+    {
+      "id": "jable_makka_spec_v4",
+      "title": "Jable_ovo",
+      "description": "修复群友jable模块没声音的问题",
+      "requiredVersion": "0.0.2",
+      "version": "1.0.3",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/1.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/1.js"
+    },
+    {
+      "id": "javday_pro_final_mak",
+      "title": "JAVDay_ovo",
+      "description": "简易的javday模块",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/2.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/2.js"
+    },
+    {
+      "id": "91porn_makka",
+      "title": "91Porn_ovo",
+      "description": "91Porn 增加关键词搜索功能",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.2",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/3.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/3.js"
+    },
+    {
+      "id": "missav_makka_play",
+      "title": "MissAV_ovo",
+      "description": "简易的missav模块",
+      "requiredVersion": "0.0.1",
+      "version": "2.1.1",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/4.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/4.js"
     },
     {
       "id": "danmu.pro_dict",
@@ -382,136 +512,6 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/duoyuandanmu.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu.pro_dict.js"
-    },
-    {
-      "id": "forward.combined.makkapakka",
-      "title": "影视榜单Lite",
-      "description": "豆瓣全能推荐 | TMDB探索 | 猜你想看",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.4",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/YSBD.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.makkapakka.js"
-    },
-    {
-      "id": "imdb_cn_fix_",
-      "title": "IMDb热榜",
-      "description": "IMDb全球榜单，支持日/周纬度切换。",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.3",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/widgets/hebingban/imdb%26cn.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/imdb_cn_fix_.js"
-    },
-    {
-      "id": "91porn_int",
-      "title": "91Porn",
-      "description": "91Porn",
-      "requiredVersion": "0.0.2",
-      "version": "0.9.6",
-      "author": "網路",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/91Porn.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_int.js"
-    },
-    {
-      "id": "91porny_int",
-      "title": "91Porny",
-      "description": "91Porny",
-      "requiredVersion": "0.0.2",
-      "version": "0.9.6",
-      "author": "網路",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/91Porny.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porny_int.js"
-    },
-    {
-      "id": "javday_int",
-      "title": "Javday",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.1",
-      "version": "1.2.0",
-      "author": "Ti",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/JAVDay.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_int.js"
-    },
-    {
-      "id": "jable_int",
-      "title": "Jable",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.2",
-      "version": "1.1.0",
-      "author": "nibiru",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/Jable.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_int.js"
-    },
-    {
-      "id": "missav_int",
-      "title": "MissAV",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.2",
-      "version": "2.0.0",
-      "author": "蝴蝶",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/MissAV.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_int.js"
-    },
-    {
-      "id": "Pornhub_int",
-      "title": "Pornhub",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.1",
-      "version": "1.1.5",
-      "author": "海带",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/Pornhub.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/pornhub_int.js"
-    },
-    {
-      "id": "xvideos_int",
-      "title": "Xvideos",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.1",
-      "version": "0.9.6",
-      "author": "海带",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/%E7%BD%91%E7%BB%9C%E6%90%9C%E9%9B%86/XVideos.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xvideos_int.js"
-    },
-    {
-      "id": "jable_makka_spec_v4",
-      "title": "Jable_ovo",
-      "description": "修复群友jable模块没声音的问题",
-      "requiredVersion": "0.0.2",
-      "version": "1.0.3",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/JABLE.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_makka_spec_v4.js"
-    },
-    {
-      "id": "javday_pro_final_mak",
-      "title": "JAVDay_ovo",
-      "description": "简易的javday模块",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.2",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/JAVDAY.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_pro_final_mak.js"
-    },
-    {
-      "id": "91porn_makka",
-      "title": "91Porn_ovo",
-      "description": "91Porn 增加关键词搜索功能",
-      "requiredVersion": "0.0.1",
-      "version": "1.0.2",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/91PORN.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_makka.js"
-    },
-    {
-      "id": "missav_makka_play",
-      "title": "MissAV_ovo",
-      "description": "简易的missav模块",
-      "requiredVersion": "0.0.1",
-      "version": "2.1.1",
-      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/ForwardWidgets/refs/heads/main/NSFW/MISSAV.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_makka_play.js"
     },
     {
       "id": "Move_lists",
