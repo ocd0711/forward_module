@@ -261,7 +261,7 @@
       "version": "2.2.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/dongmanone.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/dongmanone.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/anime_omni_fix.js"
     },
     {
       "id": "trakt_personal_key",
@@ -301,7 +301,7 @@
       "version": "1.0.2",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/west.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/west.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/western_trends_hub.js"
     },
     {
       "id": "global_tv_calendar_ultimate",
@@ -311,7 +311,7 @@
       "version": "2.0.9",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/zjrl.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/zjrl.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/global_tv_calendar_ultimate.js"
     },
     {
       "id": "cinephile_hub_ultimate",
@@ -321,7 +321,7 @@
       "version": "1.0.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/xilie.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xilie.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/cinephile_hub_ultimate.js"
     },
     {
       "id": "discover_hub_ultimate",
@@ -331,7 +331,7 @@
       "version": "1.0.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/today.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/today.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/discover_hub_ultimate.js"
     },
     {
       "id": "ultimate_media_hub_pro_ui",
@@ -341,7 +341,7 @@
       "version": "1.2.1",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/mediahub.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/mediahub.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/ultimate_media_hub_pro_ui.js"
     },
     {
       "id": "makka.platform.originals",
@@ -351,7 +351,7 @@
       "version": "1.0.5",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/liumeititime.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/liumeititime.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/makka.platform.originals.js"
     },
     {
       "id": "platform.originals.ui.fix",
@@ -361,7 +361,7 @@
       "version": "1.0.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/liumeiti.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/liumeiti.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/platform.originals.ui.fix.js"
     },
     {
       "id": "danmu.pro.online",
@@ -371,7 +371,7 @@
       "version": "1.1.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/FW/refs/heads/main/widgets/normal/danmuapipro.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmuapipro.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/danmu.pro.online.js"
     },
     {
       "id": "forward.combined.makkapakka",
@@ -401,7 +401,7 @@
       "version": "0.9.6",
       "author": "網路",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/nineone.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nineone.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_int.js"
     },
     {
       "id": "91porny_int",
@@ -411,7 +411,7 @@
       "version": "0.9.6",
       "author": "網路",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/nineoney.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/nineoney.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porny_int.js"
     },
     {
       "id": "javday_int",
@@ -421,7 +421,7 @@
       "version": "1.2.0",
       "author": "Ti",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/day.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/day.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_int.js"
     },
     {
       "id": "jable_int",
@@ -431,7 +431,7 @@
       "version": "1.1.0",
       "author": "nibiru",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/able.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/able.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_int.js"
     },
     {
       "id": "missav_int",
@@ -441,7 +441,7 @@
       "version": "2.0.0",
       "author": "蝴蝶",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/miss.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/miss.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_int.js"
     },
     {
       "id": "Pornhub_int",
@@ -451,7 +451,7 @@
       "version": "1.1.5",
       "author": "海带",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/phb.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/phb.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/pornhub_int.js"
     },
     {
       "id": "xvideos_int",
@@ -461,7 +461,7 @@
       "version": "0.9.6",
       "author": "海带",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/xv.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xv.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/xvideos_int.js"
     },
     {
       "id": "jable_makka_spec_v4",
@@ -471,7 +471,7 @@
       "version": "1.0.3",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/1.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/1.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_makka_spec_v4.js"
     },
     {
       "id": "javday_pro_final_mak",
@@ -481,7 +481,7 @@
       "version": "1.0.2",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/2.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/2.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/javday_pro_final_mak.js"
     },
     {
       "id": "91porn_makka",
@@ -491,7 +491,7 @@
       "version": "1.0.2",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/3.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/3.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/91porn_makka.js"
     },
     {
       "id": "missav_makka_play",
@@ -501,7 +501,7 @@
       "version": "2.1.1",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/4.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/4.js"
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_makka_play.js"
     },
     {
       "id": "danmu.pro_dict",
