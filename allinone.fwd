@@ -434,16 +434,6 @@
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/jable_int.js"
     },
     {
-      "id": "missav_int",
-      "title": "MissAV",
-      "description": "網路收集到的模塊",
-      "requiredVersion": "0.0.2",
-      "version": "2.0.0",
-      "author": "蝴蝶",
-      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/miss.js",
-      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_int.js"
-    },
-    {
       "id": "Pornhub_int",
       "title": "Pornhub",
       "description": "網路收集到的模塊",
@@ -502,6 +492,16 @@
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/4.js",
       "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_makka_play.js"
+    },
+    {
+      "id": "missav_int",
+      "title": "MissAV",
+      "description": "網路收集到的模塊",
+      "requiredVersion": "0.0.2",
+      "version": "2.0.0",
+      "author": "蝴蝶",
+      "url": "https://raw.githubusercontent.com/MakkaPakka518/WFSN/refs/heads/main/widgetsns/miss.js",
+      "backup_url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/missav_int.js"
     },
     {
       "id": "danmu.pro_dict",
