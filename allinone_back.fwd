@@ -238,6 +238,15 @@
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/anime_omni_fix.js"
     },
     {
+      "id": "movie_ultimate_makka_v2",
+      "title": "全能电影榜",
+      "description": "提供流行、高分、年度最佳以及按类型探索电影",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/movielist.js"
+    },
+    {
       "id": "trakt_personal_key",
       "title": "Trak 追剧日历 免key版",
       "description": "内置 Key 版：只需填写用户名即可使用。显示追剧日历、待看、收藏及历史记录",
@@ -254,6 +263,15 @@
       "version": "1.0.8",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/trakt_personal_mixed.js"
+    },
+    {
+      "id": "tmdb_upcoming_center_makka",
+      "title": "即将上映与热映榜",
+      "description": "追踪院线即将上映的电影与最新剧集，热度显示，不错过任何一部大片",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/redu.js"
     },
     {
       "id": "variety_hub_ultimate_v4_fix",
@@ -344,6 +362,15 @@
       "version": "1.0.4",
       "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
       "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/forward.combined.makkapakka.js"
+    },
+    {
+      "id": "vod_max_engine_makka",
+      "title": "VOD资源聚合",
+      "description": "内置海量采集接口（含18+）",
+      "requiredVersion": "0.0.1",
+      "version": "1.0.0",
+      "author": "𝙈𝙖𝙠𝙠𝙖𝙋𝙖𝙠𝙠𝙖",
+      "url": "https://raw.githubusercontent.com/ocd0711/forward_module/master/widgets/vodmax.js"
     },
     {
       "id": "imdb_cn_fix_",
